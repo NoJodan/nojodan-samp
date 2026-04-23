@@ -1,6 +1,6 @@
 {
 	"version": 1,
-	"generated": "2026-04-23T00:33:46.9213256Z",
+	"generated": "2026-04-23T01:10:38.3398887Z",
 	"sampctl_version": "1.13.0",
 	"dependencies": {
 		"github.com/AmyrAhmady/samp-plugin-crashdetect": {
@@ -20,6 +20,15 @@
 			"site": "github.com",
 			"user": "Awsomedude",
 			"repo": "easyDialog"
+		},
+		"github.com/Foundation-PAWN/samp-plugin-profiler-backup": {
+			"constraint": ":v2.15.3",
+			"resolved": "v2.10",
+			"commit": "0292e67c04e2451158061e3b50246cc304fb3cb9",
+			"integrity": "commit:0292e67c04e2451158061e3b50246cc304fb3cb9",
+			"site": "github.com",
+			"user": "Foundation-PAWN",
+			"repo": "samp-plugin-profiler-backup"
 		},
 		"github.com/Open-GTO/foreach": {
 			"constraint": ":v19.0",

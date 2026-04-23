@@ -8,6 +8,7 @@
 		"openmultiplayer/omp-stdlib",
 		"pawn-lang/samp-stdlib@open.mp",
 		"pawn-lang/pawn-stdlib@open.mp",
+		"AmyrAhmady/samp-plugin-crashdetect:v4.22",
 		"pawn-lang/YSI-Includes@5.x",
 		"pawn-lang/sa-mp-fixes",
 		"oscar-broman/strlib",
@@ -18,7 +19,7 @@
 		"Y-Less/sscanf:v2.13.8",
 		"samp-incognito/samp-streamer-plugin:v2.9.6",
 		"Open-GTO/foreach:v19.0",
-		"AmyrAhmady/samp-plugin-crashdetect:v4.22"
+		"Foundation-PAWN/samp-plugin-profiler-backup:v2.15.3"
 	],
 	"runtime": {}
 }
