@@ -1,0 +1,24 @@
+{
+	"user": "LAPTOP-LAWLIET\\Lawliet",
+	"repo": "nojodan-samp",
+	"preset": "openmp",
+	"entry": "main.pwn",
+	"output": "gamemodes/main.amx",
+	"dependencies": [
+		"openmultiplayer/omp-stdlib",
+		"pawn-lang/samp-stdlib@open.mp",
+		"pawn-lang/pawn-stdlib@open.mp",
+		"pawn-lang/YSI-Includes@5.x",
+		"pawn-lang/sa-mp-fixes",
+		"oscar-broman/strlib",
+		"Southclaws/samp-weapon-data",
+		"Awsomedude/easyDialog:2.0",
+		"ScavengeSurvive/mathutil:1.0.0",
+		"katursis/Pawn.CMD:3.4.0",
+		"Y-Less/sscanf:v2.13.8",
+		"samp-incognito/samp-streamer-plugin:v2.9.6",
+		"Open-GTO/foreach:v19.0",
+		"AmyrAhmady/samp-plugin-crashdetect:v4.22"
+	],
+	"runtime": {}
+}
