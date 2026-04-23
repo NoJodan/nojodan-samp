@@ -45,3 +45,4 @@ samp.ban
 #
 
 *.sublime-workspace
+.vscode/
