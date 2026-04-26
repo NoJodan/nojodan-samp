@@ -46,3 +46,5 @@ samp.ban
 
 *.sublime-workspace
 .vscode/
+
+scriptfiles/Users/

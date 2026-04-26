@@ -23,10 +23,10 @@
   },
   "pawn": {
     "legacy_plugins": [
+      "crashdetect",
       "pawncmd",
       "sscanf",
       "streamer",
-      "crashdetect",
       "profiler"
     ],
     "main_scripts": [

@@ -1,6 +1,6 @@
 {
 	"version": 1,
-	"generated": "2026-04-23T01:10:38.3398887Z",
+	"generated": "2026-04-26T14:46:35.60191Z",
 	"sampctl_version": "1.13.0",
 	"dependencies": {
 		"github.com/AmyrAhmady/samp-plugin-crashdetect": {
@@ -321,6 +321,6 @@
 		"compiler_preset": "openmp",
 		"entry": "main.pwn",
 		"output": "gamemodes/main.amx",
-		"output_hash": "sha256:44571bb5fba9ca478aff12f0fa944cc2f4bac0f24c113eba3985162b4556bea7"
+		"output_hash": "sha256:ed18e51375556ca57894cab5f8640d5b528d991b01a772ffa12d155f20fb7862"
 	}
 }
