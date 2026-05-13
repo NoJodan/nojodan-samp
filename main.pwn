@@ -8,6 +8,7 @@
 
 #include "includes/auth/auth_data.pwn"
 #include "includes/auth/auth_io.pwn"
+#include "includes/auth/auth_utils.pwn"
 #include "includes/auth/auth_dialogs.pwn"
 #include "includes/auth/auth.pwn"
 
