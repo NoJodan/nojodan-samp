@@ -1,3 +1,8 @@
+#if defined _server_included
+    #endinput
+#endif
+#define _server_included
+
 public OnGameModeInit() {
 	SetGameModeText("Test Roleplay");
 	DisableInteriorEnterExits();
