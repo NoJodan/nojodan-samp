@@ -1,3 +1,9 @@
+// auth.pwn
+// Módulo de autenticación.
+// Controla el ciclo de registro e inicio de sesión de jugadores.
+// - Detecta nuevos jugadores y muestra el diálogo adecuado.
+// - Carga datos de usuario y aplica el estado al spawn.
+// - Coordina hooks y llamadas básicas de auth.
 #if defined _auth_included
     #endinput
 #endif

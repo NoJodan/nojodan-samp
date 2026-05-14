@@ -1,3 +1,8 @@
+// auth_dialogs.pwn
+// Manejo de los diálogos de registro e inicio de sesión.
+// - Captura las respuestas del jugador cuando aparece el formulario.
+// - Redirige a las funciones de registro o login según el diálogo.
+// - Debe contener la lógica de interacción con UI para auth.
 #if defined _auth_dialogs_included
     #endinput
 #endif

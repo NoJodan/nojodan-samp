@@ -1,4 +1,7 @@
-#if defined _define_included
+// defines.pwn
+// Definiciones globales y constantes compartidas por todo el servidor.
+// Incluye rutas, IDs de diálogos, valores de color, límites y otros macros de configuración.
+// Este archivo sirve para que los módulos no dupliquen constantes ni usen valores mágicos.#if defined _define_included
     #endinput
 #endif
 #define _define_included
