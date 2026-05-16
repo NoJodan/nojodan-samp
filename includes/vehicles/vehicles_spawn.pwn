@@ -10,6 +10,7 @@
 
     Este archivo se encarga exclusivamente del control de aparición de vehículos.
 */
+
 #if defined _vehicles_spawn_included
     #endinput
 #endif

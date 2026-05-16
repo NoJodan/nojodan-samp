@@ -11,6 +11,7 @@
 
     Funciona como catálogo principal de objetos del juego.
 */
+
 #if defined _inventory_items_included
     #endinput
 #endif

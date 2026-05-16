@@ -2,6 +2,7 @@
 // Estructuras y datos de autenticación.
 // Define el esquema de información del jugador que se guarda en disco y carga en memoria.
 // Incluye contraseña, estado de login, dinero, admin, posición y variables de sesión.
+
 #if defined _auth_data_included
     #endinput
 #endif

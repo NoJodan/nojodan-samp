@@ -14,6 +14,7 @@
     Contiene únicamente lógica principal
     relacionada con vehículos.
 */
+
 #if defined _vehicles_included
     #endinput
 #endif

@@ -12,6 +12,7 @@
 
     Contiene la lógica principal del sistema.
 */
+
 #if defined _inventory_included
     #endinput
 #endif

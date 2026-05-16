@@ -13,6 +13,7 @@
     Este archivo contiene únicamente lógica
     económica general del servidor.
 */
+
 #if defined _economy_included
     #endinput
 #endif

@@ -9,6 +9,7 @@
 
     Utilizado para almacenar toda la información relacionada con inventarios.
 */
+
 #if defined _inventory_data_included
     #endinput
 #endif
