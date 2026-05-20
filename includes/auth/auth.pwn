@@ -24,7 +24,13 @@ hook OnPlayerConnect(playerid) {
     } else {
         ShowPlayerDialog(playerid, RegisterDialog, DIALOG_STYLE_PASSWORD, "Registrar", "Por favor, introduce tu contraseña:", "Registrar", "Cancelar");
     }
+    return 1;
+}
 
+hook OnPlayerDisconnect(playerid, reason) {
+    if(pInfo[playerid][pLogged]) {
+        SaveUser_Data(playerid);
+    }
     return 1;
 }
 
