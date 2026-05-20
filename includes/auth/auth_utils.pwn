@@ -26,7 +26,7 @@ stock RegisterCase(playerid, const inputtext[]) {
         UserPath(playerid, path, sizeof(path));
         new INI:file = INI_Open(path);
         INI_SetTag(file, "playerData");
-        INI_WriteString(file, "Password", inputtext);
+        INI_WriteString(file, "pPassword", inputtext);
         INI_WriteInt(file, "pAdmin", 0);
         INI_WriteBool(file, "pLogged", false);
         INI_WriteInt(file, "pMoney", 0);
