@@ -4,6 +4,7 @@
 // - Controla intentos erróneos, bloqueos temporales y mensajes de error.
 // - En el registro, crea el archivo de usuario, inicializa valores y hace spawn del jugador.
 // - En el login, compara contraseñas, restaura el estado guardado y respawnea.
+
 #if defined _auth_utils_included
     #endinput
 #endif

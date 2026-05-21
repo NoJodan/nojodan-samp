@@ -4,6 +4,7 @@
 // - Guarda el estado actual del jugador de vuelta al archivo INI.
 // - Construye la ruta de usuario usada para leer y escribir datos.
 // Este archivo debe contener toda la lógica de persistencia y lectura de datos auth.
+
 #if defined _auth_io_included
     #endinput
 #endif

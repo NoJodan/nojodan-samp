@@ -3,8 +3,10 @@
 #include <YSI_Storage\y_ini>
 #include <YSI_Coding\y_hooks>
 
-#include "includes/core/define.pwn"
-#include "includes/core/main.pwn"
+#include "includes/config/defines.pwn"
+#include "includes/config/dialogs.pwn"
+#include "includes/config/colors.pwn"
+#include "includes/core/server.pwn"
 
 #include "includes/auth/auth_data.pwn"
 #include "includes/auth/auth_io.pwn"

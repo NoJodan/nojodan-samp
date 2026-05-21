@@ -2,6 +2,7 @@
 // Configuración inicial y callbacks de ciclo de vida del servidor.
 // Aquí se inicializa el modo de juego, clima, hora y otras propiedades globales del servidor.
 // También se gestionan eventos de desconexión y limpieza que deben ejecutarse siempre.
+
 #if defined _server_included
     #endinput
 #endif
