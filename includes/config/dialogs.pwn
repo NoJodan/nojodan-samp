@@ -11,3 +11,5 @@
 //Player Info
 #define 				RegisterDialog 				(1)
 #define 				LoginDialog 				(2)
+#define 				AgeDialog 					(3)
+#define 				SexDialog 					(4)

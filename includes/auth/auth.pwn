@@ -16,10 +16,8 @@
 hook OnPlayerConnect(playerid) {
     SetPlayerColor(playerid, COLOR_USUARIO);
     
-    new path[128];
-    UserPath(playerid, path, sizeof(path));
-    if(fexist(path)) {
-        INI_ParseFile(path, "LoadUser_Data", .bExtra = true, .extra = playerid);
+    if(fexist(UserPath(playerid))) {
+        INI_ParseFile(UserPath(playerid), "LoadUser_%s", .bExtra = true, .extra = playerid);
         ShowPlayerDialog(playerid, LoginDialog, DIALOG_STYLE_PASSWORD, "Iniciar sesión", "Por favor, introduce tu contraseña:", "Ingresar", "Cancelar");
     } else {
         ShowPlayerDialog(playerid, RegisterDialog, DIALOG_STYLE_PASSWORD, "Registrar", "Por favor, introduce tu contraseña:", "Registrar", "Cancelar");
@@ -29,6 +27,7 @@ hook OnPlayerConnect(playerid) {
 
 hook OnPlayerDisconnect(playerid, reason) {
     if(pInfo[playerid][pLogged]) {
+        pInfo[playerid][pLogged] = false;
         SaveUser_Data(playerid);
     }
     return 1;
@@ -36,10 +35,6 @@ hook OnPlayerDisconnect(playerid, reason) {
 
 public OnPlayerSpawn(playerid)
 {
-    new path[128];
-    UserPath(playerid, path, sizeof(path));
-	INI_ParseFile(path, "LoadUser_Data", .bExtra = true, .extra = playerid);
-	SetPlayerSkin(playerid, pInfo[playerid][pSkin]);
 	SendClientMessage(playerid, COLOR_GREEN, "Iniciaste sesion.");
 	GivePlayerMoney(playerid, pInfo[playerid][pMoney]);
     return 1;

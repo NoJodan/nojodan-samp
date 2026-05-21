@@ -26,7 +26,7 @@ public LoadUser_Data(playerid, name[], value[]) {
     INI_Int("pFaction", pInfo[playerid][pFaction]);
     INI_Int("pRank",    pInfo[playerid][pRank]);
     INI_Int("pJob",     pInfo[playerid][pJob]);
-    INI_Int("pWarns",   pInfo[playerid][pWarns])
+    INI_Int("pWarns",   pInfo[playerid][pWarns]);
     INI_Int("pVirtualWorld", pInfo[playerid][pVirtualWorld]);
     INI_Int("pInterior", pInfo[playerid][pInterior]);
     INI_Float("pPosX", pInfo[playerid][pPosX]);
@@ -38,9 +38,7 @@ public LoadUser_Data(playerid, name[], value[]) {
 
 forward SaveUser_Data(playerid);
 public SaveUser_Data(playerid) {
-    new path[128];
-    UserPath(playerid, path, sizeof(path));
-    if(fexist(path)) {
+    if(fexist(UserPath(playerid))) {
         pInfo[playerid][pMoney] = GetPlayerMoney(playerid);
         pInfo[playerid][pSkin] = GetPlayerSkin(playerid);
         pInfo[playerid][pInterior] = GetPlayerInterior(playerid);
@@ -48,7 +46,7 @@ public SaveUser_Data(playerid) {
         GetPlayerPos(playerid, pInfo[playerid][pPosX], pInfo[playerid][pPosY], pInfo[playerid][pPosZ]);
         GetPlayerFacingAngle(playerid, pInfo[playerid][pPosA]);
 
-        new INI:file = INI_Open(path);
+        new INI:file = INI_Open(UserPath(playerid));
         INI_SetTag(file, "playerData");
         INI_WriteString(file, "pPassword", pInfo[playerid][pPassword]);
         INI_WriteInt(file, "pAdmin", pInfo[playerid][pAdmin]);
@@ -74,10 +72,10 @@ public SaveUser_Data(playerid) {
     return 1;
 }
 
-stock UserPath(playerid, dest[], size = sizeof(dest))
+stock UserPath(playerid)
 {
-    new playername[MAX_PLAYER_NAME];
-    GetPlayerName(playerid, playername, sizeof(playername));
-    format(dest, size, User_Path, playername);
-    return 1;
+	new string[128], playername[MAX_PLAYER_NAME];
+	GetPlayerName(playerid, playername, sizeof(playername));
+	format(string, sizeof(string), User_Path, playername);
+	return string;
 }
