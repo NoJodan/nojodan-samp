@@ -1199,3 +1199,854 @@ Loaded 21 component(s) from C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\com
 [2026-04-26T09:46:07-0500] [Info] 
 [2026-04-26T09:46:07-0500] [Info]  ===============================
 [2026-04-26T09:46:07-0500] [Info] 
+Starting open.mp server (1.5.8.3079) from commit c6759bd8d265171ae3d86598895a23d5a8d92a3b
+Loading component Actors.dll
+	Successfully loaded component Actors (1.5.8.3079) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.5.8.3079) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.5.8.3079) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.5.8.3079) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.5.8.3079) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.5.8.3079) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.5.8.3079) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.5.8.3079) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.5.8.3079) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.5.8.3079) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.5.8.3079) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.5.8.3079) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.5.8.3079) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.5.8.3079) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.5.8.3079) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.5.8.3079) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.5.8.3079) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.5.8.3079) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.5.8.3079) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.5.8.3079) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.5.8.3079) with UID 3f1f62ee9e22ab19
+Loaded 21 component(s) from C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\components
+[2026-05-20T22:23:14-0500] [Info] Loading plugin: crashdetect
+[2026-05-20T22:23:14-0500] [Info]   CrashDetect plugin 4.21
+[2026-05-20T22:23:14-0500] [Error] Skipping legacy plugin 'pawncmd'; There is an open.mp compatible version you can find here: https://github.com/katursis/Pawn.CMD/releases , make sure to download x.x.x-omp version.
+[2026-05-20T22:23:14-0500] [Info] Loading plugin: sscanf
+[2026-05-20T22:23:14-0500] [Info] 
+[2026-05-20T22:23:14-0500] [Info]  ===============================
+[2026-05-20T22:23:14-0500] [Info] 
+[2026-05-20T22:23:14-0500] [Info]       sscanf plugin loaded.     
+[2026-05-20T22:23:14-0500] [Info] 
+[2026-05-20T22:23:14-0500] [Info]          Version: 2.13.8
+[2026-05-20T22:23:14-0500] [Info] 
+[2026-05-20T22:23:14-0500] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-05-20T22:23:14-0500] [Info] 
+[2026-05-20T22:23:14-0500] [Info]  ===============================
+[2026-05-20T22:23:14-0500] [Info] 
+[2026-05-20T22:23:14-0500] [Info] Loading plugin: streamer
+[2026-05-20T22:23:14-0500] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-05-20T22:23:14-0500] [Info] Loading plugin: profiler
+[2026-05-20T22:23:14-0500] [Info]   Profiler plugin 2.15.3
+[2026-05-20T22:23:14-0500] [Info]  
+[2026-05-20T22:23:14-0500] [Info]  
+[2026-05-20T22:23:14-0500] [Info]          ==============================================================
+[2026-05-20T22:23:14-0500] [Info]          |                                                            |
+[2026-05-20T22:23:14-0500] [Info]          |                                                            |
+[2026-05-20T22:23:14-0500] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2026-05-20T22:23:14-0500] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2026-05-20T22:23:14-0500] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2026-05-20T22:23:14-0500] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2026-05-20T22:23:14-0500] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2026-05-20T22:23:14-0500] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2026-05-20T22:23:14-0500] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2026-05-20T22:23:14-0500] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2026-05-20T22:23:14-0500] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2026-05-20T22:23:14-0500] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2026-05-20T22:23:14-0500] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2026-05-20T22:23:14-0500] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2026-05-20T22:23:14-0500] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2026-05-20T22:23:14-0500] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2026-05-20T22:23:14-0500] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2026-05-20T22:23:14-0500] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2026-05-20T22:23:14-0500] [Info]          |                                                            |
+[2026-05-20T22:23:14-0500] [Info]          |                                                            |
+[2026-05-20T22:23:14-0500] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2026-05-20T22:23:14-0500] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2026-05-20T22:23:14-0500] [Info]          |                                                            |
+[2026-05-20T22:23:14-0500] [Info]          |                                                            |
+[2026-05-20T22:23:14-0500] [Info]          ==============================================================
+[2026-05-20T22:23:14-0500] [Info]  
+[2026-05-20T22:23:14-0500] [Info]  
+[2026-05-20T22:23:14-0500] [Info]  ========================================== 
+[2026-05-20T22:23:14-0500] [Info]  |                                        | 
+[2026-05-20T22:23:14-0500] [Info]  |   Generating code, this may take a     | 
+[2026-05-20T22:23:14-0500] [Info]  |  little bit of time.  Note that this   | 
+[2026-05-20T22:23:14-0500] [Info]  |  code generation works best with the   | 
+[2026-05-20T22:23:14-0500] [Info]  |     JIT plugin, which you are not      | 
+[2026-05-20T22:23:14-0500] [Info]  |     currently using.  Get it here:     | 
+[2026-05-20T22:23:14-0500] [Info]  |                                        | 
+[2026-05-20T22:23:14-0500] [Info]  |       https://git.io/jit-plugin        | 
+[2026-05-20T22:23:14-0500] [Info]  |                                        | 
+[2026-05-20T22:23:14-0500] [Info]  |             Please wait...             | 
+[2026-05-20T22:23:14-0500] [Info]  |                                        | 
+[2026-05-20T22:23:14-0500] [Info]  |             Done in 52ms!              | 
+[2026-05-20T22:23:14-0500] [Info]  |                                        | 
+[2026-05-20T22:23:14-0500] [Info]  ========================================== 
+[2026-05-20T22:23:14-0500] [Info]  |                                        | 
+[2026-05-20T22:23:14-0500] [Info]  | Server:      open.mp 1.5.8.3079 (W)    | 
+[2026-05-20T22:23:14-0500] [Info]  | Started:     20 May 2026 - 22:23:14    | 
+[2026-05-20T22:23:14-0500] [Info]  |                                        | 
+[2026-05-20T22:23:14-0500] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2026-05-20T22:23:14-0500] [Info]  | Includes:    open.mp v037030           | 
+[2026-05-20T22:23:14-0500] [Info]  | Codepage:    <none>                    | 
+[2026-05-20T22:23:14-0500] [Info]  | Built:       20 May 2026 - 22:22:43    | 
+[2026-05-20T22:23:14-0500] [Info]  |                                        | 
+[2026-05-20T22:23:14-0500] [Info]  | YSI:         v05.10.0006               | 
+[2026-05-20T22:23:14-0500] [Info]  | Master:      -1                        | 
+[2026-05-20T22:23:14-0500] [Info]  |                                        | 
+[2026-05-20T22:23:14-0500] [Info]  | JIT:         <none>                    | 
+[2026-05-20T22:23:14-0500] [Info]  | Crashdetect: <found>                   | 
+[2026-05-20T22:23:14-0500] [Info]  |                                        | 
+[2026-05-20T22:23:14-0500] [Info]  ========================================== 
+[2026-05-20T22:23:14-0500] [Info]  
+[2026-05-20T22:23:14-0500] [Info]  
+[2026-05-20T22:23:14-0500] [Info] Legacy Network started on port 7777
+[2026-05-20T22:24:02-0500] [Info] [connection] incoming connection: 127.0.0.1:50440 id: 0
+[2026-05-20T22:24:02-0500] [Info] [join] Lawliet has joined the server (0:127.0.0.1)
+[2026-05-20T22:24:20-0500] [Info] [part] Lawliet has left the server (0:1)
+[2026-05-20T22:24:22-0500] [Info] [connection] incoming connection: 127.0.0.1:51554 id: 0
+[2026-05-20T22:24:22-0500] [Info] [join] Lawliet has joined the server (0:127.0.0.1)
+[2026-05-20T22:24:36-0500] [Warning] Insufficient specifiers given: "{F81414}Selecciona tu sexo:" does not format 2 parameters.
+[2026-05-20T22:24:39-0500] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2026-05-20T22:24:39-0500] [Info] [debug] AMX backtrace:
+[2026-05-20T22:24:39-0500] [Info] [debug] #0 00022110 in Malloc_Free (Alloc:slot=94032) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Coding\y_inline\..\y_malloc\y_malloc_funcs.inc:891
+[2026-05-20T22:24:39-0500] [Info] [debug] #1 0003aa44 in INI_DumpTag (Alloc:dump=94032) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:1859
+[2026-05-20T22:24:39-0500] [Info] [debug] #2 0003b418 in INI_HandleEnd () <y_ini:> at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:2024
+[2026-05-20T22:24:39-0500] [Info] [debug] #3 00039cb8 in INI_ReadFile (File:fhnd=5, parent[64]=@010aa91c "", bool:handle=true) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:1679
+[2026-05-20T22:24:39-0500] [Info] [debug] #4 0003ba4c in INI_Flush_ (INI:file=0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:2128
+[2026-05-20T22:24:39-0500] [Info] [debug] #5 0003bcf4 in INI_FlushWithoutRestore (INI:file=0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:2152
+[2026-05-20T22:24:39-0500] [Info] [debug] #6 00036dfc in INI_Close (INI:file=0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:1024
+[2026-05-20T22:24:39-0500] [Info] [debug] #7 0003e2e8 in CreatePlayerFile (playerid=0) at includes/auth/auth_utils.pwn:37
+[2026-05-20T22:24:39-0500] [Info] [debug] #8 0003ecd8 in SexCase (playerid=0, listitem=0) at includes/auth/auth_utils.pwn:80
+[2026-05-20T22:24:39-0500] [Info] [debug] #9 0003f704 in _@yHOnDialogResponse@02 (playerid=0, dialogid=4, response=1, listitem=0, inputtext[]=@0006aac4 "Selecciona tu sexo:") at includes/auth/auth_dialogs.pwn:30
+[2026-05-20T22:24:39-0500] [Info] [debug] #10 0001d6b0 in public OnDialogResponse (0, 4, 1, 0, 436932) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Coding\y_inline\..\y_cgen\y_cgen_impl.inc:157
+[2026-05-20T22:24:49-0500] [Info] [part] Lawliet has left the server (0:1)
+[2026-05-20T22:24:51-0500] [Info] [connection] incoming connection: 127.0.0.1:60605 id: 0
+[2026-05-20T22:24:51-0500] [Info] [join] Lawliet has joined the server (0:127.0.0.1)
+[2026-05-20T22:24:59-0500] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2026-05-20T22:24:59-0500] [Info] [debug] AMX backtrace:
+[2026-05-20T22:24:59-0500] [Info] [debug] #0 000351c0 in bool:INI_AddToBuffer (INI:file=0, key[]=@000696e4 "pMoney", value[]=@000000f0 "60000", semis=0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:552
+[2026-05-20T22:24:59-0500] [Info] [debug] #1 0003902c in bool:INI_WriteInt (INI:file=0, name[]=@000696e4 "pMoney", data=60000) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:1450
+[2026-05-20T22:24:59-0500] [Info] [debug] #2 0003d494 in SaveUser_Data (playerid=0) at includes/auth/auth_io.pwn:55
+[2026-05-20T22:24:59-0500] [Info] [debug] #3 0003bdec in ?? (playerid=0, reason=1) at includes/core/server.pwn:23
+[2026-05-20T22:24:59-0500] [Info] [debug] #4 0001d850 in ScriptInit_OnPlayerDisconnect (0, 1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Coding\y_inline\..\y_cgen\y_cgen_impl.inc:157
+[2026-05-20T22:24:59-0500] [Info] [debug] #5 00009484 in Android_OnPlayerDisconnect (playerid=0, reason=1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Core\y_core\../y_utils/y_utils_ip.inc:115
+[2026-05-20T22:24:59-0500] [Info] [debug] #6 00006b04 in public OnPlayerDisconnect (0, 1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Core\y_core\..\..\YSI_Players\y_android\y_android_entry.inc:148
+[2026-05-20T22:24:59-0500] [Info] [part] Lawliet has left the server (0:1)
+[2026-05-20T22:28:34-0500] [Info] [debug] Server received interrupt signal
+[2026-05-20T22:28:34-0500] [Info] [debug] Native backtrace:
+[2026-05-20T22:28:34-0500] [Info] [debug] #0 77bf951c in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:28:34-0500] [Info] [debug] #1 75ba3090 in ?? () in C:\Windows\System32\KERNELBASE.dll
+[2026-05-20T22:28:34-0500] [Info] [debug] #2 75ba302f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[2026-05-20T22:28:34-0500] [Info] [debug] #3 0060daf1 in ?? () in omp-server.exe
+[2026-05-20T22:28:34-0500] [Info] [debug] #4 0056e8c9 in ?? () in omp-server.exe
+[2026-05-20T22:28:34-0500] [Info] [debug] #5 005696ca in ?? () in omp-server.exe
+[2026-05-20T22:28:34-0500] [Info] [debug] #6 008396a1 in ?? () in omp-server.exe
+[2026-05-20T22:28:34-0500] [Info] [debug] #7 76065d49 in ?? () in C:\Windows\System32\KERNEL32.DLL
+[2026-05-20T22:28:34-0500] [Info] [debug] #8 77bed83b in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:28:34-0500] [Info] [debug] #9 77bed7c1 in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:28:34-0500] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-05-20T22:28:34-0500] [Info] 
+[2026-05-20T22:28:34-0500] [Info]  ===============================
+[2026-05-20T22:28:34-0500] [Info] 
+[2026-05-20T22:28:34-0500] [Info]      sscanf plugin unloaded.    
+[2026-05-20T22:28:34-0500] [Info] 
+[2026-05-20T22:28:34-0500] [Info]  ===============================
+[2026-05-20T22:28:34-0500] [Info] 
+Starting open.mp server (1.5.8.3079) from commit c6759bd8d265171ae3d86598895a23d5a8d92a3b
+Loading component Actors.dll
+	Successfully loaded component Actors (1.5.8.3079) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.5.8.3079) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.5.8.3079) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.5.8.3079) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.5.8.3079) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.5.8.3079) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.5.8.3079) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.5.8.3079) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.5.8.3079) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.5.8.3079) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.5.8.3079) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.5.8.3079) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.5.8.3079) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.5.8.3079) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.5.8.3079) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.5.8.3079) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.5.8.3079) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.5.8.3079) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.5.8.3079) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.5.8.3079) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.5.8.3079) with UID 3f1f62ee9e22ab19
+Loaded 21 component(s) from C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\components
+[2026-05-20T22:28:55-0500] [Info] Loading plugin: crashdetect
+[2026-05-20T22:28:55-0500] [Info]   CrashDetect plugin 4.21
+[2026-05-20T22:28:55-0500] [Error] Skipping legacy plugin 'pawncmd'; There is an open.mp compatible version you can find here: https://github.com/katursis/Pawn.CMD/releases , make sure to download x.x.x-omp version.
+[2026-05-20T22:28:55-0500] [Info] Loading plugin: sscanf
+[2026-05-20T22:28:55-0500] [Info] 
+[2026-05-20T22:28:55-0500] [Info]  ===============================
+[2026-05-20T22:28:55-0500] [Info] 
+[2026-05-20T22:28:55-0500] [Info]       sscanf plugin loaded.     
+[2026-05-20T22:28:55-0500] [Info] 
+[2026-05-20T22:28:55-0500] [Info]          Version: 2.13.8
+[2026-05-20T22:28:55-0500] [Info] 
+[2026-05-20T22:28:55-0500] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-05-20T22:28:55-0500] [Info] 
+[2026-05-20T22:28:55-0500] [Info]  ===============================
+[2026-05-20T22:28:55-0500] [Info] 
+[2026-05-20T22:28:55-0500] [Info] Loading plugin: streamer
+[2026-05-20T22:28:55-0500] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-05-20T22:28:55-0500] [Info] Loading plugin: profiler
+[2026-05-20T22:28:55-0500] [Info]   Profiler plugin 2.15.3
+[2026-05-20T22:28:55-0500] [Info]  
+[2026-05-20T22:28:55-0500] [Info]  
+[2026-05-20T22:28:55-0500] [Info]          ==============================================================
+[2026-05-20T22:28:55-0500] [Info]          |                                                            |
+[2026-05-20T22:28:55-0500] [Info]          |                                                            |
+[2026-05-20T22:28:55-0500] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2026-05-20T22:28:55-0500] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2026-05-20T22:28:55-0500] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2026-05-20T22:28:55-0500] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2026-05-20T22:28:55-0500] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2026-05-20T22:28:55-0500] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2026-05-20T22:28:55-0500] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2026-05-20T22:28:55-0500] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2026-05-20T22:28:55-0500] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2026-05-20T22:28:55-0500] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2026-05-20T22:28:55-0500] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2026-05-20T22:28:55-0500] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2026-05-20T22:28:55-0500] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2026-05-20T22:28:55-0500] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2026-05-20T22:28:55-0500] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2026-05-20T22:28:55-0500] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2026-05-20T22:28:55-0500] [Info]          |                                                            |
+[2026-05-20T22:28:55-0500] [Info]          |                                                            |
+[2026-05-20T22:28:55-0500] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2026-05-20T22:28:55-0500] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2026-05-20T22:28:55-0500] [Info]          |                                                            |
+[2026-05-20T22:28:55-0500] [Info]          |                                                            |
+[2026-05-20T22:28:55-0500] [Info]          ==============================================================
+[2026-05-20T22:28:55-0500] [Info]  
+[2026-05-20T22:28:55-0500] [Info]  
+[2026-05-20T22:28:55-0500] [Info]  ========================================== 
+[2026-05-20T22:28:55-0500] [Info]  |                                        | 
+[2026-05-20T22:28:55-0500] [Info]  |   Generating code, this may take a     | 
+[2026-05-20T22:28:55-0500] [Info]  |  little bit of time.  Note that this   | 
+[2026-05-20T22:28:55-0500] [Info]  |  code generation works best with the   | 
+[2026-05-20T22:28:55-0500] [Info]  |     JIT plugin, which you are not      | 
+[2026-05-20T22:28:55-0500] [Info]  |     currently using.  Get it here:     | 
+[2026-05-20T22:28:55-0500] [Info]  |                                        | 
+[2026-05-20T22:28:55-0500] [Info]  |       https://git.io/jit-plugin        | 
+[2026-05-20T22:28:55-0500] [Info]  |                                        | 
+[2026-05-20T22:28:55-0500] [Info]  |             Please wait...             | 
+[2026-05-20T22:28:55-0500] [Info]  |                                        | 
+[2026-05-20T22:28:55-0500] [Info]  |             Done in 90ms!              | 
+[2026-05-20T22:28:55-0500] [Info]  |                                        | 
+[2026-05-20T22:28:55-0500] [Info]  ========================================== 
+[2026-05-20T22:28:55-0500] [Info]  |                                        | 
+[2026-05-20T22:28:55-0500] [Info]  | Server:      open.mp 1.5.8.3079 (W)    | 
+[2026-05-20T22:28:55-0500] [Info]  | Started:     20 May 2026 - 22:28:55    | 
+[2026-05-20T22:28:55-0500] [Info]  |                                        | 
+[2026-05-20T22:28:55-0500] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2026-05-20T22:28:55-0500] [Info]  | Includes:    open.mp v037030           | 
+[2026-05-20T22:28:55-0500] [Info]  | Codepage:    <none>                    | 
+[2026-05-20T22:28:55-0500] [Info]  | Built:       20 May 2026 - 22:28:44    | 
+[2026-05-20T22:28:55-0500] [Info]  |                                        | 
+[2026-05-20T22:28:55-0500] [Info]  | YSI:         v05.10.0006               | 
+[2026-05-20T22:28:55-0500] [Info]  | Master:      -1                        | 
+[2026-05-20T22:28:55-0500] [Info]  |                                        | 
+[2026-05-20T22:28:55-0500] [Info]  | JIT:         <none>                    | 
+[2026-05-20T22:28:55-0500] [Info]  | Crashdetect: <found>                   | 
+[2026-05-20T22:28:55-0500] [Info]  |                                        | 
+[2026-05-20T22:28:55-0500] [Info]  ========================================== 
+[2026-05-20T22:28:55-0500] [Info]  
+[2026-05-20T22:28:55-0500] [Info]  
+[2026-05-20T22:28:55-0500] [Info] Legacy Network started on port 7777
+[2026-05-20T22:29:08-0500] [Info] [connection] incoming connection: 127.0.0.1:57863 id: 0
+[2026-05-20T22:29:08-0500] [Info] [join] Lawliet has joined the server (0:127.0.0.1)
+[2026-05-20T22:29:23-0500] [Info] [part] Lawliet has left the server (0:1)
+[2026-05-20T22:30:12-0500] [Info] [debug] Server received interrupt signal
+[2026-05-20T22:30:12-0500] [Info] [debug] Native backtrace:
+[2026-05-20T22:30:12-0500] [Info] [debug] #0 77bf951c in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:30:12-0500] [Info] [debug] #1 75ba3090 in ?? () in C:\Windows\System32\KERNELBASE.dll
+[2026-05-20T22:30:12-0500] [Info] [debug] #2 75ba302f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[2026-05-20T22:30:12-0500] [Info] [debug] #3 0034daf1 in ?? () in omp-server.exe
+[2026-05-20T22:30:12-0500] [Info] [debug] #4 002ae8c9 in ?? () in omp-server.exe
+[2026-05-20T22:30:12-0500] [Info] [debug] #5 002a96ca in ?? () in omp-server.exe
+[2026-05-20T22:30:12-0500] [Info] [debug] #6 005796a1 in ?? () in omp-server.exe
+[2026-05-20T22:30:12-0500] [Info] [debug] #7 76065d49 in ?? () in C:\Windows\System32\KERNEL32.DLL
+[2026-05-20T22:30:12-0500] [Info] [debug] #8 77bed83b in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:30:12-0500] [Info] [debug] #9 77bed7c1 in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:30:12-0500] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-05-20T22:30:12-0500] [Info] 
+[2026-05-20T22:30:12-0500] [Info]  ===============================
+[2026-05-20T22:30:12-0500] [Info] 
+[2026-05-20T22:30:12-0500] [Info]      sscanf plugin unloaded.    
+[2026-05-20T22:30:12-0500] [Info] 
+[2026-05-20T22:30:12-0500] [Info]  ===============================
+[2026-05-20T22:30:12-0500] [Info] 
+Starting open.mp server (1.5.8.3079) from commit c6759bd8d265171ae3d86598895a23d5a8d92a3b
+Loading component Actors.dll
+	Successfully loaded component Actors (1.5.8.3079) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.5.8.3079) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.5.8.3079) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.5.8.3079) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.5.8.3079) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.5.8.3079) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.5.8.3079) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.5.8.3079) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.5.8.3079) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.5.8.3079) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.5.8.3079) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.5.8.3079) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.5.8.3079) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.5.8.3079) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.5.8.3079) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.5.8.3079) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.5.8.3079) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.5.8.3079) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.5.8.3079) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.5.8.3079) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.5.8.3079) with UID 3f1f62ee9e22ab19
+Loaded 21 component(s) from C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\components
+[2026-05-20T22:30:19-0500] [Info] Loading plugin: crashdetect
+[2026-05-20T22:30:19-0500] [Info]   CrashDetect plugin 4.21
+[2026-05-20T22:30:19-0500] [Error] Skipping legacy plugin 'pawncmd'; There is an open.mp compatible version you can find here: https://github.com/katursis/Pawn.CMD/releases , make sure to download x.x.x-omp version.
+[2026-05-20T22:30:19-0500] [Info] Loading plugin: sscanf
+[2026-05-20T22:30:19-0500] [Info] 
+[2026-05-20T22:30:19-0500] [Info]  ===============================
+[2026-05-20T22:30:19-0500] [Info] 
+[2026-05-20T22:30:19-0500] [Info]       sscanf plugin loaded.     
+[2026-05-20T22:30:19-0500] [Info] 
+[2026-05-20T22:30:19-0500] [Info]          Version: 2.13.8
+[2026-05-20T22:30:19-0500] [Info] 
+[2026-05-20T22:30:19-0500] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-05-20T22:30:19-0500] [Info] 
+[2026-05-20T22:30:19-0500] [Info]  ===============================
+[2026-05-20T22:30:19-0500] [Info] 
+[2026-05-20T22:30:19-0500] [Info] Loading plugin: streamer
+[2026-05-20T22:30:19-0500] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-05-20T22:30:19-0500] [Info] Loading plugin: profiler
+[2026-05-20T22:30:19-0500] [Info]   Profiler plugin 2.15.3
+[2026-05-20T22:30:19-0500] [Info]  
+[2026-05-20T22:30:19-0500] [Info]  
+[2026-05-20T22:30:19-0500] [Info]          ==============================================================
+[2026-05-20T22:30:19-0500] [Info]          |                                                            |
+[2026-05-20T22:30:19-0500] [Info]          |                                                            |
+[2026-05-20T22:30:19-0500] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2026-05-20T22:30:19-0500] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2026-05-20T22:30:19-0500] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2026-05-20T22:30:19-0500] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2026-05-20T22:30:19-0500] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2026-05-20T22:30:19-0500] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2026-05-20T22:30:19-0500] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2026-05-20T22:30:19-0500] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2026-05-20T22:30:19-0500] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2026-05-20T22:30:19-0500] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2026-05-20T22:30:19-0500] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2026-05-20T22:30:19-0500] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2026-05-20T22:30:19-0500] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2026-05-20T22:30:19-0500] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2026-05-20T22:30:19-0500] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2026-05-20T22:30:19-0500] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2026-05-20T22:30:19-0500] [Info]          |                                                            |
+[2026-05-20T22:30:19-0500] [Info]          |                                                            |
+[2026-05-20T22:30:19-0500] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2026-05-20T22:30:19-0500] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2026-05-20T22:30:19-0500] [Info]          |                                                            |
+[2026-05-20T22:30:19-0500] [Info]          |                                                            |
+[2026-05-20T22:30:19-0500] [Info]          ==============================================================
+[2026-05-20T22:30:19-0500] [Info]  
+[2026-05-20T22:30:19-0500] [Info]  
+[2026-05-20T22:30:19-0500] [Info]  ========================================== 
+[2026-05-20T22:30:19-0500] [Info]  |                                        | 
+[2026-05-20T22:30:19-0500] [Info]  |   Generating code, this may take a     | 
+[2026-05-20T22:30:19-0500] [Info]  |  little bit of time.  Note that this   | 
+[2026-05-20T22:30:19-0500] [Info]  |  code generation works best with the   | 
+[2026-05-20T22:30:19-0500] [Info]  |     JIT plugin, which you are not      | 
+[2026-05-20T22:30:19-0500] [Info]  |     currently using.  Get it here:     | 
+[2026-05-20T22:30:19-0500] [Info]  |                                        | 
+[2026-05-20T22:30:19-0500] [Info]  |       https://git.io/jit-plugin        | 
+[2026-05-20T22:30:19-0500] [Info]  |                                        | 
+[2026-05-20T22:30:19-0500] [Info]  |             Please wait...             | 
+[2026-05-20T22:30:19-0500] [Info]  |                                        | 
+[2026-05-20T22:30:19-0500] [Info]  |             Done in 74ms!              | 
+[2026-05-20T22:30:19-0500] [Info]  |                                        | 
+[2026-05-20T22:30:19-0500] [Info]  ========================================== 
+[2026-05-20T22:30:19-0500] [Info]  |                                        | 
+[2026-05-20T22:30:19-0500] [Info]  | Server:      open.mp 1.5.8.3079 (W)    | 
+[2026-05-20T22:30:19-0500] [Info]  | Started:     20 May 2026 - 22:30:19    | 
+[2026-05-20T22:30:19-0500] [Info]  |                                        | 
+[2026-05-20T22:30:19-0500] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2026-05-20T22:30:19-0500] [Info]  | Includes:    open.mp v037030           | 
+[2026-05-20T22:30:19-0500] [Info]  | Codepage:    <none>                    | 
+[2026-05-20T22:30:19-0500] [Info]  | Built:       20 May 2026 - 22:30:13    | 
+[2026-05-20T22:30:19-0500] [Info]  |                                        | 
+[2026-05-20T22:30:19-0500] [Info]  | YSI:         v05.10.0006               | 
+[2026-05-20T22:30:19-0500] [Info]  | Master:      -1                        | 
+[2026-05-20T22:30:19-0500] [Info]  |                                        | 
+[2026-05-20T22:30:19-0500] [Info]  | JIT:         <none>                    | 
+[2026-05-20T22:30:19-0500] [Info]  | Crashdetect: <found>                   | 
+[2026-05-20T22:30:19-0500] [Info]  |                                        | 
+[2026-05-20T22:30:19-0500] [Info]  ========================================== 
+[2026-05-20T22:30:19-0500] [Info]  
+[2026-05-20T22:30:19-0500] [Info]  
+[2026-05-20T22:30:19-0500] [Info] Legacy Network started on port 7777
+[2026-05-20T22:30:32-0500] [Info] [connection] incoming connection: 127.0.0.1:65465 id: 0
+[2026-05-20T22:30:32-0500] [Info] [join] Lawliet has joined the server (0:127.0.0.1)
+[2026-05-20T22:33:00-0500] [Info] [debug] Server received interrupt signal
+[2026-05-20T22:33:00-0500] [Info] [debug] Native backtrace:
+[2026-05-20T22:33:00-0500] [Info] [debug] #0 77bf951c in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:33:00-0500] [Info] [debug] #1 75ba3090 in ?? () in C:\Windows\System32\KERNELBASE.dll
+[2026-05-20T22:33:00-0500] [Info] [debug] #2 75ba302f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[2026-05-20T22:33:00-0500] [Info] [debug] #3 00c0daf1 in ?? () in omp-server.exe
+[2026-05-20T22:33:00-0500] [Info] [debug] #4 00b6e8c9 in ?? () in omp-server.exe
+[2026-05-20T22:33:00-0500] [Info] [debug] #5 00b696ca in ?? () in omp-server.exe
+[2026-05-20T22:33:00-0500] [Info] [debug] #6 00e396a1 in ?? () in omp-server.exe
+[2026-05-20T22:33:00-0500] [Info] [debug] #7 76065d49 in ?? () in C:\Windows\System32\KERNEL32.DLL
+[2026-05-20T22:33:00-0500] [Info] [debug] #8 77bed83b in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:33:00-0500] [Info] [debug] #9 77bed7c1 in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:33:00-0500] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-05-20T22:33:00-0500] [Info] 
+[2026-05-20T22:33:00-0500] [Info]  ===============================
+[2026-05-20T22:33:00-0500] [Info] 
+[2026-05-20T22:33:00-0500] [Info]      sscanf plugin unloaded.    
+[2026-05-20T22:33:00-0500] [Info] 
+[2026-05-20T22:33:00-0500] [Info]  ===============================
+[2026-05-20T22:33:00-0500] [Info] 
+Starting open.mp server (1.5.8.3079) from commit c6759bd8d265171ae3d86598895a23d5a8d92a3b
+Loading component Actors.dll
+	Successfully loaded component Actors (1.5.8.3079) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.5.8.3079) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.5.8.3079) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.5.8.3079) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.5.8.3079) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.5.8.3079) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.5.8.3079) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.5.8.3079) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.5.8.3079) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.5.8.3079) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.5.8.3079) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.5.8.3079) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.5.8.3079) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.5.8.3079) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.5.8.3079) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.5.8.3079) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.5.8.3079) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.5.8.3079) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.5.8.3079) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.5.8.3079) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.5.8.3079) with UID 3f1f62ee9e22ab19
+Loaded 21 component(s) from C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\components
+[2026-05-20T22:33:07-0500] [Info] Loading plugin: crashdetect
+[2026-05-20T22:33:07-0500] [Info]   CrashDetect plugin 4.21
+[2026-05-20T22:33:07-0500] [Error] Skipping legacy plugin 'pawncmd'; There is an open.mp compatible version you can find here: https://github.com/katursis/Pawn.CMD/releases , make sure to download x.x.x-omp version.
+[2026-05-20T22:33:07-0500] [Info] Loading plugin: sscanf
+[2026-05-20T22:33:07-0500] [Info] 
+[2026-05-20T22:33:07-0500] [Info]  ===============================
+[2026-05-20T22:33:07-0500] [Info] 
+[2026-05-20T22:33:07-0500] [Info]       sscanf plugin loaded.     
+[2026-05-20T22:33:07-0500] [Info] 
+[2026-05-20T22:33:07-0500] [Info]          Version: 2.13.8
+[2026-05-20T22:33:07-0500] [Info] 
+[2026-05-20T22:33:07-0500] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-05-20T22:33:07-0500] [Info] 
+[2026-05-20T22:33:07-0500] [Info]  ===============================
+[2026-05-20T22:33:07-0500] [Info] 
+[2026-05-20T22:33:07-0500] [Info] Loading plugin: streamer
+[2026-05-20T22:33:07-0500] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-05-20T22:33:07-0500] [Info] Loading plugin: profiler
+[2026-05-20T22:33:07-0500] [Info]   Profiler plugin 2.15.3
+[2026-05-20T22:33:07-0500] [Info]  
+[2026-05-20T22:33:07-0500] [Info]  
+[2026-05-20T22:33:07-0500] [Info]          ==============================================================
+[2026-05-20T22:33:07-0500] [Info]          |                                                            |
+[2026-05-20T22:33:07-0500] [Info]          |                                                            |
+[2026-05-20T22:33:07-0500] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2026-05-20T22:33:07-0500] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2026-05-20T22:33:07-0500] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2026-05-20T22:33:07-0500] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2026-05-20T22:33:07-0500] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2026-05-20T22:33:07-0500] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2026-05-20T22:33:07-0500] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2026-05-20T22:33:07-0500] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2026-05-20T22:33:07-0500] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2026-05-20T22:33:07-0500] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2026-05-20T22:33:07-0500] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2026-05-20T22:33:07-0500] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2026-05-20T22:33:07-0500] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2026-05-20T22:33:07-0500] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2026-05-20T22:33:07-0500] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2026-05-20T22:33:07-0500] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2026-05-20T22:33:07-0500] [Info]          |                                                            |
+[2026-05-20T22:33:07-0500] [Info]          |                                                            |
+[2026-05-20T22:33:07-0500] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2026-05-20T22:33:07-0500] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2026-05-20T22:33:07-0500] [Info]          |                                                            |
+[2026-05-20T22:33:07-0500] [Info]          |                                                            |
+[2026-05-20T22:33:07-0500] [Info]          ==============================================================
+[2026-05-20T22:33:07-0500] [Info]  
+[2026-05-20T22:33:07-0500] [Info]  
+[2026-05-20T22:33:07-0500] [Info]  ========================================== 
+[2026-05-20T22:33:07-0500] [Info]  |                                        | 
+[2026-05-20T22:33:07-0500] [Info]  |   Generating code, this may take a     | 
+[2026-05-20T22:33:07-0500] [Info]  |  little bit of time.  Note that this   | 
+[2026-05-20T22:33:07-0500] [Info]  |  code generation works best with the   | 
+[2026-05-20T22:33:07-0500] [Info]  |     JIT plugin, which you are not      | 
+[2026-05-20T22:33:07-0500] [Info]  |     currently using.  Get it here:     | 
+[2026-05-20T22:33:07-0500] [Info]  |                                        | 
+[2026-05-20T22:33:07-0500] [Info]  |       https://git.io/jit-plugin        | 
+[2026-05-20T22:33:07-0500] [Info]  |                                        | 
+[2026-05-20T22:33:07-0500] [Info]  |             Please wait...             | 
+[2026-05-20T22:33:07-0500] [Info]  |                                        | 
+[2026-05-20T22:33:07-0500] [Info]  |             Done in 56ms!              | 
+[2026-05-20T22:33:07-0500] [Info]  |                                        | 
+[2026-05-20T22:33:07-0500] [Info]  ========================================== 
+[2026-05-20T22:33:07-0500] [Info]  |                                        | 
+[2026-05-20T22:33:07-0500] [Info]  | Server:      open.mp 1.5.8.3079 (W)    | 
+[2026-05-20T22:33:07-0500] [Info]  | Started:     20 May 2026 - 22:33:07    | 
+[2026-05-20T22:33:07-0500] [Info]  |                                        | 
+[2026-05-20T22:33:07-0500] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2026-05-20T22:33:07-0500] [Info]  | Includes:    open.mp v037030           | 
+[2026-05-20T22:33:07-0500] [Info]  | Codepage:    <none>                    | 
+[2026-05-20T22:33:07-0500] [Info]  | Built:       20 May 2026 - 22:33:02    | 
+[2026-05-20T22:33:07-0500] [Info]  |                                        | 
+[2026-05-20T22:33:07-0500] [Info]  | YSI:         v05.10.0006               | 
+[2026-05-20T22:33:07-0500] [Info]  | Master:      -1                        | 
+[2026-05-20T22:33:07-0500] [Info]  |                                        | 
+[2026-05-20T22:33:07-0500] [Info]  | JIT:         <none>                    | 
+[2026-05-20T22:33:07-0500] [Info]  | Crashdetect: <found>                   | 
+[2026-05-20T22:33:07-0500] [Info]  |                                        | 
+[2026-05-20T22:33:07-0500] [Info]  ========================================== 
+[2026-05-20T22:33:07-0500] [Info]  
+[2026-05-20T22:33:07-0500] [Info]  
+[2026-05-20T22:33:07-0500] [Info] Legacy Network started on port 7777
+[2026-05-20T22:33:18-0500] [Info] [connection] incoming connection: 127.0.0.1:51080 id: 0
+[2026-05-20T22:33:18-0500] [Info] [join] Lawliet has joined the server (0:127.0.0.1)
+[2026-05-20T22:33:37-0500] [Info] [part] Lawliet has left the server (0:2)
+[2026-05-20T22:34:04-0500] [Info] [connection] incoming connection: 127.0.0.1:63984 id: 0
+[2026-05-20T22:34:04-0500] [Info] [join] Lawliet has joined the server (0:127.0.0.1)
+[2026-05-20T22:34:22-0500] [Info] [part] Lawliet has left the server (0:1)
+[2026-05-20T22:34:24-0500] [Info] [connection] incoming connection: 127.0.0.1:61050 id: 0
+[2026-05-20T22:34:24-0500] [Info] [join] Lawliet has joined the server (0:127.0.0.1)
+[2026-05-20T22:34:33-0500] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2026-05-20T22:34:33-0500] [Info] [debug] AMX backtrace:
+[2026-05-20T22:34:33-0500] [Info] [debug] #0 00034eb8 in Alloc:INI_GetKey (Alloc:cur=93716, key[]=@000696a8 "pAdmin", &Alloc:prev=@010aa9e8 93700) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:507
+[2026-05-20T22:34:33-0500] [Info] [debug] #1 000352c0 in bool:INI_AddToBuffer (INI:file=0, key[]=@000696a8 "pAdmin", value[]=@000000f0 "0", semis=0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:552
+[2026-05-20T22:34:33-0500] [Info] [debug] #2 0003902c in bool:INI_WriteInt (INI:file=0, name[]=@000696a8 "pAdmin", data=0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:1450
+[2026-05-20T22:34:33-0500] [Info] [debug] #3 0003d39c in SaveUser_Data (playerid=0) at includes/auth/auth_io.pwn:53
+[2026-05-20T22:34:33-0500] [Info] [debug] #4 0003bdec in ?? (playerid=0, reason=1) at includes/core/server.pwn:23
+[2026-05-20T22:34:33-0500] [Info] [debug] #5 0001d850 in ScriptInit_OnPlayerDisconnect (0, 1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Coding\y_inline\..\y_cgen\y_cgen_impl.inc:157
+[2026-05-20T22:34:33-0500] [Info] [debug] #6 00009484 in Android_OnPlayerDisconnect (playerid=0, reason=1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Core\y_core\../y_utils/y_utils_ip.inc:115
+[2026-05-20T22:34:33-0500] [Info] [debug] #7 00006b04 in public OnPlayerDisconnect (0, 1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Core\y_core\..\..\YSI_Players\y_android\y_android_entry.inc:148
+[2026-05-20T22:34:33-0500] [Info] [part] Lawliet has left the server (0:1)
+[2026-05-20T22:34:45-0500] [Info] [connection] incoming connection: 127.0.0.1:53578 id: 0
+[2026-05-20T22:34:45-0500] [Info] [join] Lawliet has joined the server (0:127.0.0.1)
+[2026-05-20T22:34:50-0500] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2026-05-20T22:34:50-0500] [Info] [debug] AMX backtrace:
+[2026-05-20T22:34:50-0500] [Info] [debug] #0 0003744c in e_INI_LINE_TYPE:INI_IdentifyLineType (str[208]=@00014398 "pInterior=0", &p0s=@010aa8c8 0, &p0e=@010aa8c4 0, &p1s=@010aa8c0 0, &p1e=@010aa8bc 0, &p2s=@010aa8b8 0, &p2e=@010aa8b4 0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:1170
+[2026-05-20T22:34:50-0500] [Info] [debug] #1 00039320 in INI_ReadFile (File:fhnd=26, parent[64]=@010aa8f0 "", bool:handle=true) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:1564
+[2026-05-20T22:34:50-0500] [Info] [debug] #2 0003ba4c in INI_Flush_ (INI:file=0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:2128
+[2026-05-20T22:34:50-0500] [Info] [debug] #3 0003bcf4 in INI_FlushWithoutRestore (INI:file=0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:2152
+[2026-05-20T22:34:50-0500] [Info] [debug] #4 00036dfc in INI_Close (INI:file=0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:1024
+[2026-05-20T22:34:50-0500] [Info] [debug] #5 0003dc28 in SaveUser_Data (playerid=0) at includes/auth/auth_io.pwn:70
+[2026-05-20T22:34:50-0500] [Info] [debug] #6 0003bdec in ?? (playerid=0, reason=1) at includes/core/server.pwn:23
+[2026-05-20T22:34:50-0500] [Info] [debug] #7 0001d850 in ScriptInit_OnPlayerDisconnect (0, 1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Coding\y_inline\..\y_cgen\y_cgen_impl.inc:157
+[2026-05-20T22:34:50-0500] [Info] [debug] #8 00009484 in Android_OnPlayerDisconnect (playerid=0, reason=1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Core\y_core\../y_utils/y_utils_ip.inc:115
+[2026-05-20T22:34:50-0500] [Info] [debug] #9 00006b04 in public OnPlayerDisconnect (0, 1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Core\y_core\..\..\YSI_Players\y_android\y_android_entry.inc:148
+[2026-05-20T22:34:50-0500] [Info] [part] Lawliet has left the server (0:1)
+[2026-05-20T22:35:36-0500] [Info] [debug] Server received interrupt signal
+[2026-05-20T22:35:36-0500] [Info] [debug] Native backtrace:
+[2026-05-20T22:35:36-0500] [Info] [debug] #0 77bf951c in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:35:36-0500] [Info] [debug] #1 75ba3090 in ?? () in C:\Windows\System32\KERNELBASE.dll
+[2026-05-20T22:35:36-0500] [Info] [debug] #2 75ba302f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[2026-05-20T22:35:36-0500] [Info] [debug] #3 00d6daf1 in ?? () in omp-server.exe
+[2026-05-20T22:35:36-0500] [Info] [debug] #4 00cce8c9 in ?? () in omp-server.exe
+[2026-05-20T22:35:36-0500] [Info] [debug] #5 00cc96ca in ?? () in omp-server.exe
+[2026-05-20T22:35:36-0500] [Info] [debug] #6 00f996a1 in ?? () in omp-server.exe
+[2026-05-20T22:35:36-0500] [Info] [debug] #7 76065d49 in ?? () in C:\Windows\System32\KERNEL32.DLL
+[2026-05-20T22:35:36-0500] [Info] [debug] #8 77bed83b in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:35:36-0500] [Info] [debug] #9 77bed7c1 in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:35:36-0500] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-05-20T22:35:36-0500] [Info] 
+[2026-05-20T22:35:36-0500] [Info]  ===============================
+[2026-05-20T22:35:36-0500] [Info] 
+[2026-05-20T22:35:36-0500] [Info]      sscanf plugin unloaded.    
+[2026-05-20T22:35:36-0500] [Info] 
+[2026-05-20T22:35:36-0500] [Info]  ===============================
+[2026-05-20T22:35:36-0500] [Info] 
+Starting open.mp server (1.5.8.3079) from commit c6759bd8d265171ae3d86598895a23d5a8d92a3b
+Loading component Actors.dll
+	Successfully loaded component Actors (1.5.8.3079) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.5.8.3079) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.5.8.3079) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.5.8.3079) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.5.8.3079) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.5.8.3079) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.5.8.3079) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.5.8.3079) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.5.8.3079) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.5.8.3079) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.5.8.3079) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.5.8.3079) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.5.8.3079) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.5.8.3079) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.5.8.3079) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.5.8.3079) with UID 871144d399f5f613
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.5.8.3079) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.5.8.3079) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.5.8.3079) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.5.8.3079) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.5.8.3079) with UID 3f1f62ee9e22ab19
+Loaded 21 component(s) from C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\components
+[2026-05-20T22:35:48-0500] [Info] Loading plugin: crashdetect
+[2026-05-20T22:35:48-0500] [Info]   CrashDetect plugin 4.21
+[2026-05-20T22:35:48-0500] [Error] Skipping legacy plugin 'pawncmd'; There is an open.mp compatible version you can find here: https://github.com/katursis/Pawn.CMD/releases , make sure to download x.x.x-omp version.
+[2026-05-20T22:35:48-0500] [Info] Loading plugin: sscanf
+[2026-05-20T22:35:48-0500] [Info] 
+[2026-05-20T22:35:48-0500] [Info]  ===============================
+[2026-05-20T22:35:48-0500] [Info] 
+[2026-05-20T22:35:48-0500] [Info]       sscanf plugin loaded.     
+[2026-05-20T22:35:48-0500] [Info] 
+[2026-05-20T22:35:48-0500] [Info]          Version: 2.13.8
+[2026-05-20T22:35:48-0500] [Info] 
+[2026-05-20T22:35:48-0500] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-05-20T22:35:48-0500] [Info] 
+[2026-05-20T22:35:48-0500] [Info]  ===============================
+[2026-05-20T22:35:48-0500] [Info] 
+[2026-05-20T22:35:48-0500] [Info] Loading plugin: streamer
+[2026-05-20T22:35:48-0500] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-05-20T22:35:48-0500] [Info] Loading plugin: profiler
+[2026-05-20T22:35:48-0500] [Info]   Profiler plugin 2.15.3
+[2026-05-20T22:35:48-0500] [Info]  
+[2026-05-20T22:35:48-0500] [Info]  
+[2026-05-20T22:35:48-0500] [Info]          ==============================================================
+[2026-05-20T22:35:48-0500] [Info]          |                                                            |
+[2026-05-20T22:35:48-0500] [Info]          |                                                            |
+[2026-05-20T22:35:48-0500] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2026-05-20T22:35:48-0500] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2026-05-20T22:35:48-0500] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2026-05-20T22:35:48-0500] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2026-05-20T22:35:48-0500] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2026-05-20T22:35:48-0500] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2026-05-20T22:35:48-0500] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2026-05-20T22:35:48-0500] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2026-05-20T22:35:48-0500] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2026-05-20T22:35:48-0500] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2026-05-20T22:35:48-0500] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2026-05-20T22:35:48-0500] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2026-05-20T22:35:48-0500] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2026-05-20T22:35:48-0500] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2026-05-20T22:35:48-0500] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2026-05-20T22:35:48-0500] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2026-05-20T22:35:48-0500] [Info]          |                                                            |
+[2026-05-20T22:35:48-0500] [Info]          |                                                            |
+[2026-05-20T22:35:48-0500] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2026-05-20T22:35:48-0500] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2026-05-20T22:35:48-0500] [Info]          |                                                            |
+[2026-05-20T22:35:48-0500] [Info]          |                                                            |
+[2026-05-20T22:35:48-0500] [Info]          ==============================================================
+[2026-05-20T22:35:48-0500] [Info]  
+[2026-05-20T22:35:48-0500] [Info]  
+[2026-05-20T22:35:48-0500] [Info]  ========================================== 
+[2026-05-20T22:35:48-0500] [Info]  |                                        | 
+[2026-05-20T22:35:48-0500] [Info]  |   Generating code, this may take a     | 
+[2026-05-20T22:35:48-0500] [Info]  |  little bit of time.  Note that this   | 
+[2026-05-20T22:35:48-0500] [Info]  |  code generation works best with the   | 
+[2026-05-20T22:35:48-0500] [Info]  |     JIT plugin, which you are not      | 
+[2026-05-20T22:35:48-0500] [Info]  |     currently using.  Get it here:     | 
+[2026-05-20T22:35:48-0500] [Info]  |                                        | 
+[2026-05-20T22:35:48-0500] [Info]  |       https://git.io/jit-plugin        | 
+[2026-05-20T22:35:48-0500] [Info]  |                                        | 
+[2026-05-20T22:35:48-0500] [Info]  |             Please wait...             | 
+[2026-05-20T22:35:48-0500] [Info]  |                                        | 
+[2026-05-20T22:35:48-0500] [Info]  |             Done in 51ms!              | 
+[2026-05-20T22:35:48-0500] [Info]  |                                        | 
+[2026-05-20T22:35:48-0500] [Info]  ========================================== 
+[2026-05-20T22:35:48-0500] [Info]  |                                        | 
+[2026-05-20T22:35:48-0500] [Info]  | Server:      open.mp 1.5.8.3079 (W)    | 
+[2026-05-20T22:35:48-0500] [Info]  | Started:     20 May 2026 - 22:35:48    | 
+[2026-05-20T22:35:48-0500] [Info]  |                                        | 
+[2026-05-20T22:35:48-0500] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2026-05-20T22:35:48-0500] [Info]  | Includes:    open.mp v037030           | 
+[2026-05-20T22:35:48-0500] [Info]  | Codepage:    <none>                    | 
+[2026-05-20T22:35:48-0500] [Info]  | Built:       20 May 2026 - 22:35:38    | 
+[2026-05-20T22:35:48-0500] [Info]  |                                        | 
+[2026-05-20T22:35:48-0500] [Info]  | YSI:         v05.10.0006               | 
+[2026-05-20T22:35:48-0500] [Info]  | Master:      -1                        | 
+[2026-05-20T22:35:48-0500] [Info]  |                                        | 
+[2026-05-20T22:35:48-0500] [Info]  | JIT:         <none>                    | 
+[2026-05-20T22:35:48-0500] [Info]  | Crashdetect: <found>                   | 
+[2026-05-20T22:35:48-0500] [Info]  |                                        | 
+[2026-05-20T22:35:48-0500] [Info]  ========================================== 
+[2026-05-20T22:35:48-0500] [Info]  
+[2026-05-20T22:35:48-0500] [Info]  
+[2026-05-20T22:35:48-0500] [Info] Legacy Network started on port 7777
+[2026-05-20T22:37:22-0500] [Info] [connection] incoming connection: 127.0.0.1:62337 id: 0
+[2026-05-20T22:37:22-0500] [Info] [join] Lawliet has joined the server (0:127.0.0.1)
+[2026-05-20T22:37:46-0500] [Info] [part] Lawliet has left the server (0:1)
+[2026-05-20T22:37:48-0500] [Info] [connection] incoming connection: 127.0.0.1:58524 id: 0
+[2026-05-20T22:37:48-0500] [Info] [join] Lawliet has joined the server (0:127.0.0.1)
+[2026-05-20T22:37:56-0500] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2026-05-20T22:37:56-0500] [Info] [debug] AMX backtrace:
+[2026-05-20T22:37:56-0500] [Info] [debug] #0 000351c0 in bool:INI_AddToBuffer (INI:file=0, key[]=@00069700 "pOnDuty", value[]=@000000f0 "0", semis=0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:552
+[2026-05-20T22:37:56-0500] [Info] [debug] #1 0003902c in bool:INI_WriteInt (INI:file=0, name[]=@00069700 "pOnDuty", data=0) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\y_ini_impl.inc:1450
+[2026-05-20T22:37:56-0500] [Info] [debug] #2 0003d510 in SaveUser_Data (playerid=0) at includes/auth/auth_io.pwn:56
+[2026-05-20T22:37:56-0500] [Info] [debug] #3 0003bdec in ?? (playerid=0, reason=1) at includes/core/server.pwn:23
+[2026-05-20T22:37:56-0500] [Info] [debug] #4 0001d850 in ScriptInit_OnPlayerDisconnect (0, 1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Coding\y_inline\..\y_cgen\y_cgen_impl.inc:157
+[2026-05-20T22:37:56-0500] [Info] [debug] #5 00009484 in Android_OnPlayerDisconnect (playerid=0, reason=1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Core\y_core\../y_utils/y_utils_ip.inc:115
+[2026-05-20T22:37:56-0500] [Info] [debug] #6 00006b04 in public OnPlayerDisconnect (0, 1) at C:\Users\Lawliet\OneDrive\Proyectos\nojodan-samp\dependencies\YSI-Includes\YSI_Storage\y_ini\..\..\YSI_Core\y_core\..\..\YSI_Players\y_android\y_android_entry.inc:148
+[2026-05-20T22:37:56-0500] [Info] [part] Lawliet has left the server (0:1)
+[2026-05-20T22:38:28-0500] [Info] [debug] Server received interrupt signal
+[2026-05-20T22:38:28-0500] [Info] [debug] Native backtrace:
+[2026-05-20T22:38:28-0500] [Info] [debug] #0 77bf951c in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:38:28-0500] [Info] [debug] #1 75ba3090 in ?? () in C:\Windows\System32\KERNELBASE.dll
+[2026-05-20T22:38:28-0500] [Info] [debug] #2 75ba302f in ?? () in C:\Windows\System32\KERNELBASE.dll
+[2026-05-20T22:38:28-0500] [Info] [debug] #3 00f9daf1 in ?? () in omp-server.exe
+[2026-05-20T22:38:28-0500] [Info] [debug] #4 00efe8c9 in ?? () in omp-server.exe
+[2026-05-20T22:38:28-0500] [Info] [debug] #5 00ef96ca in ?? () in omp-server.exe
+[2026-05-20T22:38:28-0500] [Info] [debug] #6 011c96a1 in ?? () in omp-server.exe
+[2026-05-20T22:38:28-0500] [Info] [debug] #7 76065d49 in ?? () in C:\Windows\System32\KERNEL32.DLL
+[2026-05-20T22:38:28-0500] [Info] [debug] #8 77bed83b in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:38:28-0500] [Info] [debug] #9 77bed7c1 in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2026-05-20T22:38:28-0500] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-05-20T22:38:28-0500] [Info] 
+[2026-05-20T22:38:28-0500] [Info]  ===============================
+[2026-05-20T22:38:28-0500] [Info] 
+[2026-05-20T22:38:28-0500] [Info]      sscanf plugin unloaded.    
+[2026-05-20T22:38:28-0500] [Info] 
+[2026-05-20T22:38:28-0500] [Info]  ===============================
+[2026-05-20T22:38:28-0500] [Info] 

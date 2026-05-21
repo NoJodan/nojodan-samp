@@ -14,3 +14,7 @@
 
 //Limites
 #define					MAX_PING					(1500)
+
+//Generos
+#define                 SEX_MALE                     (0)
+#define                 SEX_FEMALE                   (1)

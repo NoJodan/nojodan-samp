@@ -10,8 +10,44 @@
 #endif
 #define _auth_utils_included
 
+stock CreatePlayerFile(playerid) {
+    new INI:file = INI_Open(UserPath(playerid));
+    INI_SetTag(file, "playerData");
+    INI_WriteString(file, "pPassword", pInfo[playerid][pPassword]);
+    INI_WriteInt(file, "pAdmin", 0);
+    INI_WriteBool(file, "pLogged", true);
+    INI_WriteInt(file, "pMoney", 0);
+    INI_WriteInt(file, "pOnDuty", 0);
+    INI_WriteInt(file, "pSkin", pInfo[playerid][pSkin]);
+    INI_WriteInt(file, "pSex", pInfo[playerid][pSex]);
+    INI_WriteInt(file, "pAge", pInfo[playerid][pAge]);
+    INI_WriteInt(file, "pLevel", 0);
+    INI_WriteInt(file, "pFaction", 0);
+    INI_WriteInt(file, "pRank", 0);
+    INI_WriteInt(file, "pJob", 0);
+    INI_WriteInt(file, "pWarns", 0);
+    INI_WriteInt(file, "pVirtualWorld", 0);
+    INI_WriteInt(file, "pInterior", 0);
+    INI_WriteFloat(file, "pPosX", -2016.4399);
+    INI_WriteFloat(file, "pPosY", -79.77140);
+    INI_WriteFloat(file, "pPosZ", 35.3203);
+    INI_WriteFloat(file, "pPosA", 0);
+    INI_Close(file);
+
+    SetSpawnInfo(playerid, 0, pInfo[playerid][pSkin], -2016.4399, -79.77140, 35.3203, 0, t_WEAPON:0, 0, t_WEAPON:0, 0, t_WEAPON:0, 0);
+    SetPlayerVirtualWorld(playerid, 0);
+    SetPlayerInterior(playerid, 0);
+    SetPlayerSkin(playerid, pInfo[playerid][pSkin]);
+    GivePlayerMoney(playerid, 30000);
+    SpawnPlayer(playerid);
+
+    return 1;
+}
+
 stock RegisterCase(playerid, const inputtext[]) {
-    if(!strlen(inputtext)) {
+    new lenPass = strlen(inputtext);
+
+    if(lenPass < 4 || lenPass > 20) {
         if(pInfo[playerid][pTriesRegister] == 3) {
 			SendClientMessage(playerid, COLOR_GREEN, ""COLOR_RED_T"[ERROR] Demasiados intentos de registro. (kick)");
 			pInfo[playerid][pTriesRegister] = 0;
@@ -19,38 +55,29 @@ stock RegisterCase(playerid, const inputtext[]) {
             return 1;
 		}
 
-        SendClientMessage(playerid, COLOR_GREEN, ""COLOR_RED_T"[ERROR] La contraseña no puede estar vacía.");
+        SendClientMessage(playerid, COLOR_GREEN, ""COLOR_RED_T"[ERROR] La contraseña no cumple los requisitos.");
         pInfo[playerid][pTriesRegister]++;
         return ShowPlayerDialog(playerid, RegisterDialog, DIALOG_STYLE_PASSWORD, "Registrar", ""COLOR_RED_T"Has ingresado una contrasena invalida.\n"COLOR_WHITE_T"Escribe una contrasena valida para registrarse:", "Registrar", "Cancelar");
-    } else {
-        new path[128];
-        UserPath(playerid, path, sizeof(path));
-        new INI:file = INI_Open(path);
-        INI_SetTag(file, "playerData");
-        INI_WriteString(file, "Password", inputtext);
-        INI_WriteInt(file, "pAdmin", 0);
-        INI_WriteBool(file, "pLogged", false);
-        INI_WriteInt(file, "pMoney", 0);
-        INI_WriteInt(file, "pOnDuty", 0);
-        INI_WriteInt(file, "pSkin", 0);
-        INI_WriteInt(file, "pSex", 0);
-        INI_WriteInt(file, "pVirtualWorld", 0);
-        INI_WriteInt(file, "pInterior", 0);
-        INI_WriteFloat(file, "pPosX", -2016.4399);
-        INI_WriteFloat(file, "pPosY", -79.77140);
-        INI_WriteFloat(file, "pPosZ", 35.3203);
-        INI_WriteFloat(file, "pPosA", 0);
-        INI_Close(file);
-
-        SetSpawnInfo(playerid, 0, 0, -2016.4399, -79.77140, 35.3203, 0, t_WEAPON:0, 0, t_WEAPON:0, 0, t_WEAPON:0, 0);
-        SetPlayerVirtualWorld(playerid, 0);
-        SetPlayerInterior(playerid, 0);
-        SetPlayerSkin(playerid, 0);
-        GivePlayerMoney(playerid, 30000);
-        SpawnPlayer(playerid);
-
-        return 1;
     }
+    strcopy(pInfo[playerid][pPassword], inputtext);
+    return ShowPlayerDialog(playerid, AgeDialog, DIALOG_STYLE_INPUT, "Edad", ""COLOR_RED_T"Bienvenido al servidor.\n"COLOR_WHITE_T"Antes de comenzar, por favor ingresa tu edad (mínimo 18 años):", "Confirmar", "");
+}
+
+stock AgeCase(playerid, const inputtext[]) {
+    new age = strval(inputtext);
+    if(age < 18 || age > 100) {
+        SendClientMessage(playerid, COLOR_GREEN, ""COLOR_RED_T"[ERROR] Edad inválida. Mínimo 18 años.");
+        return ShowPlayerDialog(playerid, AgeDialog, DIALOG_STYLE_INPUT, "Edad", ""COLOR_RED_T"Edad inválida.\n"COLOR_WHITE_T"Ingresa tu edad (mínimo 18 años):", "Confirmar", "");
+    }
+
+    pInfo[playerid][pAge] = age;
+    return ShowPlayerDialog(playerid, SexDialog, DIALOG_STYLE_LIST, "Sexo", ""COLOR_RED_T"Masculino\nFemenino", "Confirmar", "Cancelar");
+}
+
+stock SexCase(playerid, listitem) {
+    pInfo[playerid][pSex] = (listitem == 0) ? SEX_MALE : SEX_FEMALE;
+    pInfo[playerid][pSkin] = (pInfo[playerid][pSex] == SEX_MALE) ? 0 : 11;
+    return CreatePlayerFile(playerid);
 }
 
 stock LoginCase(playerid, const inputtext[]) {
@@ -60,7 +87,7 @@ stock LoginCase(playerid, const inputtext[]) {
         SetPlayerInterior(playerid, pInfo[playerid][pInterior]);
         SetPlayerSkin(playerid, pInfo[playerid][pSkin]);
         GivePlayerMoney(playerid, pInfo[playerid][pMoney]);
-        SetSpawnInfo(playerid, 0, 0, pInfo[playerid][pPosX], pInfo[playerid][pPosY], pInfo[playerid][pPosZ], pInfo[playerid][pPosA], t_WEAPON:0, 0, t_WEAPON:0, 0, t_WEAPON:0, 0);
+        SetSpawnInfo(playerid, 0, pInfo[playerid][pSkin], pInfo[playerid][pPosX], pInfo[playerid][pPosY], pInfo[playerid][pPosZ], pInfo[playerid][pPosA], t_WEAPON:0, 0, t_WEAPON:0, 0, t_WEAPON:0, 0);
         SpawnPlayer(playerid);
         return 1;
     } else {

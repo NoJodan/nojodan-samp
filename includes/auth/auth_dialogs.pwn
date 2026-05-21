@@ -21,6 +21,14 @@ hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
             if(!response) return Kick(playerid);
             return LoginCase(playerid, inputtext);
         }
+        case AgeDialog: {
+            if(!response) return Kick(playerid);
+            return AgeCase(playerid, inputtext);
+        }
+        case SexDialog: {
+            if(!response) return Kick(playerid);
+            return SexCase(playerid, listitem);
+        }
     }
     return 1;
 }
