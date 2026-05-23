@@ -8,7 +8,9 @@
 #endif
 #define _server_included
 
-public OnGameModeInit() {
+#include <YSI_Coding\y_hooks>
+
+hook OnGameModeInit() {
 	SetGameModeText("Test Roleplay");
 	DisableInteriorEnterExits();
 	SetWeather(2);
@@ -18,7 +20,7 @@ public OnGameModeInit() {
 	return 1;
 }
 
-public OnPlayerDisconnect(playerid, reason) {
+hook OnPlayerDisconnect(playerid, reason) {
 	SaveUser_Data(playerid);
 	return 1;
 }

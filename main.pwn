@@ -14,6 +14,7 @@
 #include "includes/auth/auth_dialogs.pwn"
 #include "includes/auth/auth.pwn"
 
+#include "includes/admin/admin_cmds.pwn"
 
 main()
 {

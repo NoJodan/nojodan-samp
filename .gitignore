@@ -26,7 +26,6 @@ plugins/
 
 # binaries
 *.exe
-*.dll
 *.so
 announce
 samp03svr
@@ -49,3 +48,4 @@ samp.ban
 
 scriptfiles/Users/
 log.txt
+pawn.lock
