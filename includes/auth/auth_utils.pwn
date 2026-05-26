@@ -39,6 +39,7 @@ stock CreatePlayerFile(playerid) {
     SetPlayerInterior(playerid, 0);
     SetPlayerSkin(playerid, pInfo[playerid][pSkin]);
     GivePlayerMoney(playerid, 30000);
+    pInfo[playerid][pLogged] = true;
     SpawnPlayer(playerid);
 
     return 1;

@@ -18,8 +18,7 @@
 		"katursis/Pawn.CMD:3.4.0",
 		"Y-Less/sscanf:v2.13.8",
 		"samp-incognito/samp-streamer-plugin:v2.9.6",
-		"Open-GTO/foreach:v19.0",
-		"Foundation-PAWN/samp-plugin-profiler-backup:v2.15.3"
+		"Open-GTO/foreach:v19.0"
 	],
 	"runtime": {}
 }

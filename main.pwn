@@ -2,6 +2,7 @@
 #include <open.mp>
 #include <YSI_Storage\y_ini>
 #include <YSI_Coding\y_hooks>
+#include <Pawn.CMD>
 
 #include "includes/config/defines.pwn"
 #include "includes/config/dialogs.pwn"
@@ -15,6 +16,12 @@
 #include "includes/auth/auth.pwn"
 
 #include "includes/admin/admin_cmds.pwn"
+
+#include "includes/rol/rol_data.pwn"
+#include "includes/rol/rol_io.pwn"
+#include "includes/rol/rol_dialogs.pwn"
+#include "includes/rol/rol_cmds.pwn"
+#include "includes/rol/rol.pwn"
 
 main()
 {
