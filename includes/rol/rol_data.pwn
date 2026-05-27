@@ -8,11 +8,3 @@
 #endif
 #define _rol_data_included
 
-enum rolData {
-    rNombre[32],        // Nombre del personaje en el server
-    rSexo,              // Género del personaje (SEX_MALE / SEX_FEMALE)
-    rEdad,              // Edad del personaje
-    bool:rCreado,       // Indica si el personaje ha sido creado o es nuevo
-}
-
-new rInfo[MAX_PLAYERS][rolData];

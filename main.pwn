@@ -20,8 +20,10 @@
 #include "includes/rol/rol_data.pwn"
 #include "includes/rol/rol_io.pwn"
 #include "includes/rol/rol_dialogs.pwn"
-#include "includes/rol/rol_cmds.pwn"
+//#include "includes/rol/rol_cmds.pwn"
 #include "includes/rol/rol.pwn"
+
+#include "includes/core/callbacks.pwn"
 
 main()
 {

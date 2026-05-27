@@ -16,8 +16,18 @@
 hook OnPlayerConnect(playerid) {
     SetPlayerColor(playerid, COLOR_USUARIO);
     
-    if(fexist(UserPath(playerid))) {
-        INI_ParseFile(UserPath(playerid), "LoadUser_%s", .bExtra = true, .extra = playerid);
+    new bool:rolName = CheckPlayerName(playerid);
+    if(!rolName) {
+        SendClientMessage(playerid, COLOR_RED, "Tu nombre de jugador no es válido. Por favor, cámbialo para continuar.");
+        Kick(playerid);
+        return 0;
+    }
+
+    new path[128];
+    UserPath(playerid, path, sizeof(path));
+
+    if(fexist(path)) {
+        INI_ParseFile(path, "LoadUser_Data", .bExtra = true, .extra = playerid);
         ShowPlayerDialog(playerid, LoginDialog, DIALOG_STYLE_PASSWORD, "Iniciar sesión", "Por favor, introduce tu contraseña:", "Ingresar", "Cancelar");
     } else {
         ShowPlayerDialog(playerid, RegisterDialog, DIALOG_STYLE_PASSWORD, "Registrar", "Por favor, introduce tu contraseña:", "Registrar", "Cancelar");
@@ -36,6 +46,5 @@ hook OnPlayerDisconnect(playerid, reason) {
 public OnPlayerSpawn(playerid)
 {
 	SendClientMessage(playerid, COLOR_GREEN, "Iniciaste sesion.");
-	GivePlayerMoney(playerid, pInfo[playerid][pMoney]);
     return 1;
 }

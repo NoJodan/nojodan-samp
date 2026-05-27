@@ -11,7 +11,9 @@
 #define _auth_utils_included
 
 stock CreatePlayerFile(playerid) {
-    new INI:file = INI_Open(UserPath(playerid));
+    new path[128];
+    UserPath(playerid, path, sizeof(path));
+    new INI:file = INI_Open(path);
     INI_SetTag(file, "playerData");
     INI_WriteString(file, "pPassword", pInfo[playerid][pPassword]);
     INI_WriteInt(file, "pAdmin", 0);
@@ -82,6 +84,7 @@ stock SexCase(playerid, listitem) {
 }
 
 stock LoginCase(playerid, const inputtext[]) {
+
     if(strcmp(inputtext, pInfo[playerid][pPassword], true) == 0) {
         pInfo[playerid][pLogged] = true;
         SetPlayerVirtualWorld(playerid, pInfo[playerid][pVirtualWorld]);
@@ -103,4 +106,35 @@ stock LoginCase(playerid, const inputtext[]) {
         pInfo[playerid][pTriesLogin]++;
         return ShowPlayerDialog(playerid, LoginDialog, DIALOG_STYLE_PASSWORD, "Iniciar sesión", ""COLOR_RED_T"Has ingresado una contrasena incorrecta.\n"COLOR_WHITE_T"Escribe tu contrasena para iniciar sesion:", "Ingresar", "Cancelar");
     }
+}
+
+stock bool:CheckPlayerName(playerid) {
+    new name[MAX_PLAYER_NAME];
+    GetPlayerName(playerid, name, sizeof(name));
+    
+    // Validar que el nombre no esté vacío y tenga entre 3 y 20 caracteres
+    if(strlen(name) < 3 || strlen(name) > 20) {
+        return false;
+    }
+
+    new underPos = strfind(name, "_");
+    if(underPos == -1 || underPos == 0 || underPos == strlen(name) - 1) {
+        return false; // No contiene guion bajo
+    }
+
+    if(strfind(name, " ") != -1) {
+        return false; // Contiene espacios
+    }
+
+    if(name[0] < 'A' || name[0] > 'Z') {
+        return false; // No comienza con mayúscula
+    }
+
+    for(new i = 0; i < strlen(name); i++) {
+        if((!(name[i] >= 'a' && name[i] <= 'z') && !(name[i] >= 'A' && name[i] <= 'Z')) && name[i] != '_') {
+            return false; // Contiene caracteres no permitidos
+        }
+    }
+
+    return true;
 }
