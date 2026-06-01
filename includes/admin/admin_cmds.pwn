@@ -7,9 +7,7 @@
 #endif
 #define _admin_cmds_included
 
-// ─────────────────────────────────────────
-// /adminduty — Activa el modo administrador
-// ─────────────────────────────────────────
+
 CMD:adminduty(playerid, params[]) {
     if(!pInfo[playerid][pLogged])
         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
@@ -30,9 +28,6 @@ CMD:adminduty(playerid, params[]) {
     return 1;
 }
 
-// ─────────────────────────────────────────
-// /adminoffduty — Desactiva el modo administrador
-// ─────────────────────────────────────────
 CMD:adminoffduty(playerid, params[]) {
     if(!pInfo[playerid][pLogged])
         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
@@ -53,9 +48,6 @@ CMD:adminoffduty(playerid, params[]) {
     return 1;
 }
 
-// ─────────────────────────────────────────
-// /kick [id] — Expulsa a un jugador del servidor
-// ─────────────────────────────────────────
 CMD:kick(playerid, params[]) {
     if(!pInfo[playerid][pLogged])
         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
@@ -84,9 +76,6 @@ CMD:kick(playerid, params[]) {
     return 1;
 }
 
-// ─────────────────────────────────────────
-// /ban [id] — Banea a un jugador del servidor
-// ─────────────────────────────────────────
 CMD:ban(playerid, params[]) {
     if(!pInfo[playerid][pLogged])
         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
@@ -114,9 +103,6 @@ CMD:ban(playerid, params[]) {
     return 1;
 }
 
-// ─────────────────────────────────────────
-// /dararma [id] [arma] [municion] — Da un arma a un jugador
-// ─────────────────────────────────────────
 CMD:dararma(playerid, params[]) {
     if(!pInfo[playerid][pLogged])
         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
@@ -154,9 +140,6 @@ CMD:dararma(playerid, params[]) {
     return 1;
 }
 
-// ─────────────────────────────────────────
-// /limpiararmas [id] — Quita todas las armas de un jugador
-// ─────────────────────────────────────────
 CMD:limpiararmas(playerid, params[]) {
     if(!pInfo[playerid][pLogged])
         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
@@ -184,6 +167,77 @@ CMD:limpiararmas(playerid, params[]) {
     SendClientMessage(targetid, COLOR_YELLOW, msg);
 
     format(msg, sizeof(msg), "[ADMIN] Limpiaste las armas de %s (ID:%d).", targetName, targetid);
+    SendClientMessage(playerid, COLOR_GREEN, msg);
+    return 1;
+}
+
+CMD:to(playerid, params[]) {
+    if(!pInfo[playerid][pLogged])
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
+
+    if(!IsAdmin(playerid))
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] No tienes permisos de administrador.");
+
+    if(!IsOnDuty(playerid))
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes estar en modo /adminduty para usar comandos admin.");
+
+    new targetid;
+    if(sscanf(params, "u", targetid))
+        return SendClientMessage(playerid, COLOR_WHITE, "USO: /to [id]");
+
+    if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid))
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] Jugador no encontrado.");
+
+    if(targetid == playerid)
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] No puedes teleportarte a ti mismo.");
+
+    new Float:x, Float:y, Float:z;
+    GetPlayerPos(targetid, x, y, z);
+    SetPlayerPos(playerid, x + 1.0, y + 1.0, z);
+    SetPlayerInterior(playerid, GetPlayerInterior(targetid));
+    SetPlayerVirtualWorld(playerid, GetPlayerVirtualWorld(targetid));
+
+    new targetName[MAX_PLAYER_NAME], msg[128];
+    GetPlayerName(targetid, targetName, sizeof(targetName));
+    format(msg, sizeof(msg), "[ADMIN] Te teleportaste a %s (ID:%d).", targetName, targetid);
+    SendClientMessage(playerid, COLOR_GREEN, msg);
+    return 1;
+}
+
+CMD:traer(playerid, params[]) {
+    if(!pInfo[playerid][pLogged])
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
+
+    if(!IsAdmin(playerid))
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] No tienes permisos de administrador.");
+
+    if(!IsOnDuty(playerid))
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes estar en modo /adminduty para usar comandos admin.");
+
+    new targetid;
+    if(sscanf(params, "u", targetid))
+        return SendClientMessage(playerid, COLOR_WHITE, "USO: /traer [id]");
+
+    if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid))
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] Jugador no encontrado.");
+
+    if(targetid == playerid)
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] No puedes traerte a ti mismo.");
+
+    new Float:x, Float:y, Float:z;
+    GetPlayerPos(playerid, x, y, z);
+    SetPlayerPos(targetid, x + 1.0, y + 1.0, z);
+    SetPlayerInterior(targetid, GetPlayerInterior(playerid));
+    SetPlayerVirtualWorld(targetid, GetPlayerVirtualWorld(playerid));
+
+    new adminName[MAX_PLAYER_NAME], targetName[MAX_PLAYER_NAME], msg[128];
+    GetPlayerName(playerid, adminName, sizeof(adminName));
+    GetPlayerName(targetid, targetName, sizeof(targetName));
+
+    format(msg, sizeof(msg), "[ADMIN] El administrador %s te ha traído a su posición.", adminName);
+    SendClientMessage(targetid, COLOR_YELLOW, msg);
+
+    format(msg, sizeof(msg), "[ADMIN] Trajiste a %s (ID:%d) a tu posición.", targetName, targetid);
     SendClientMessage(playerid, COLOR_GREEN, msg);
     return 1;
 }
