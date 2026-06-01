@@ -62,6 +62,6 @@ CMD:do(playerid, params[]) {
     new msg[160];
     format(msg, sizeof(msg), "* %s (( %s ))", params, rInfo[playerid][rNombre]);
 
-    RolProxMsg(playerid, ROL_CHAT_DIST, COLOR_PURPLE, msg);
+    RolProxMsg(playerid, ROL_CHAT_DIST, COLOR_CIAN, msg);
     return 1;
 }
