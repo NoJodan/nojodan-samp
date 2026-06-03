@@ -18,3 +18,13 @@
 //Generos
 #define                 SEX_MALE                     (0)
 #define                 SEX_FEMALE                   (1)
+
+// Niveles de administración
+#define ADMIN_NONE      (0)
+#define ADMIN_TRIAL     (1)   // Admin en prueba
+#define ADMIN_MOD       (2)   // Moderador
+#define ADMIN_ADMIN     (3)   // Administrador
+#define ADMIN_HEAD      (4)   // Head Admin
+
+// Niveles de rol (experiencia / nivel del personaje)
+#define ROL_NIVEL_MAX   (100)

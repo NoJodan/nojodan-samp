@@ -26,8 +26,7 @@
       "crashdetect",
       "pawncmd",
       "sscanf",
-      "streamer",
-      "profiler"
+      "streamer"
     ],
     "main_scripts": [
       "main"

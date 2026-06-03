@@ -13,3 +13,7 @@
 #define 				LoginDialog 				(2)
 #define 				AgeDialog 					(3)
 #define 				SexDialog 					(4)
+
+//Rol
+#define 				RolDialog 					(5)
+#define 				RolNombreDialog 			(6)
