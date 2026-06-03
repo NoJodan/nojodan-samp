@@ -19,6 +19,7 @@
 #define					COLOR_RED 					0xE60000FF
 #define					COLOR_PURPLE				0xC2A2DAAA
 #define					COLOR_GREEN					0x9EC73DAA
+#define                 COLOR_CYAN                  0x06B6C2AA
 #define					COLOR_FADE1					0xE6E6E6E6
 #define					COLOR_FADE2					0xC8C8C8C8
 #define					COLOR_FADE3					0xAAAAAAAA

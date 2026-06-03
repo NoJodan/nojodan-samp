@@ -7,12 +7,3 @@
     #endinput
 #endif
 #define _rol_data_included
-
-#define ROL_CHAT_DIST   (15.0)
-
-enum rolData {
-    rNombre[MAX_PLAYER_NAME], // nombre del personaje
-    bool:rCreado,             // si ya creó su personaje
-}
-
-new rInfo[MAX_PLAYERS][rolData];
