@@ -19,5 +19,5 @@
 #define 			RolNombreDialog 			(6)
 
 //Admin
-#define 			AdminKickDialog 			(10)
-#define 			AdminBanDialog 				(11)
+#define 			AdminKickDialog 			(7)
+#define 			AdminBanDialog 				(8)

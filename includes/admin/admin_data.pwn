@@ -14,11 +14,8 @@
 // Variable temporal para guardar el target de un comando admin (usado en diálogos)
 new gAdminTarget[MAX_PLAYERS] = {INVALID_PLAYER_ID, ...};
 
-// Tipo de acción pendiente en diálogo (kick=1, ban=2)
-new gAdminAction[MAX_PLAYERS];
-
 // Razones predefinidas para kick/ban mostradas en diálogo
-#define ADMIN_REASONS_LIST  "Conducta inapropiada\nTrampas / Hacks\nRobo de cuenta\nLanguaje ofensivo\nOtra razón"
+#define ADMIN_REASONS_LIST  "Conducta inapropiada\nTrampas / Hacks\nRobo de cuenta\nLenguaje ofensivo\nOtra razón"
 
 
 

@@ -16,10 +16,10 @@
 #include "includes/auth/auth_dialogs.pwn"
 #include "includes/auth/auth.pwn"
 
-// Admin: orden importante — data → admin (stocks) → dialogs → cmds
 #include "includes/admin/admin_data.pwn"
-#include "includes/admin/admin.pwn"
+#include "includes/admin/admin_utils.pwn"
 #include "includes/admin/admin_dialogs.pwn"
+#include "includes/admin/admin.pwn"
 #include "includes/admin/admin_cmds.pwn"
 
 #include "includes/rol/rol_data.pwn"

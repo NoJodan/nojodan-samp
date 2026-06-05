@@ -9,6 +9,12 @@
 #define _colors_included
 
 #define					COLOR_USUARIO				0xEFEFEFFF
+#define                 COLOR_TRIAL					0x00FF00FF
+#define                 COLOR_MOD					0x0000FFFF
+#define                 COLOR_ADMIN					0xFF0000FF
+#define                 COLOR_HEAD					0xFFFF00FF
+
+
 //Colores
 #define					COLOR_WHITE_T				"{FFFFFF}"
 #define					COLOR_RED_T					"{F81414}"

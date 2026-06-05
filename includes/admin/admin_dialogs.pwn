@@ -12,13 +12,10 @@
 // Muestra el diálogo para seleccionar razón de kick
 stock ShowKickReasonDialog(adminid, targetid) {
     gAdminTarget[adminid] = targetid;
-    gAdminAction[adminid] = 1; // 1 = kick
-
-    new targetName[MAX_PLAYER_NAME];
-    GetPlayerName(targetid, targetName, sizeof(targetName));
+    // acción implícita: kick (antes se almacenaba en gAdminAction, ahora no se usa)
 
     new header[64];
-    format(header, sizeof(header), "Kickear a %s", targetName);
+    format(header, sizeof(header), "Kickear a %s", GetPlayerNameEx(targetid));
 
     ShowPlayerDialog(adminid, AdminKickDialog, DIALOG_STYLE_LIST,
         header,
@@ -29,13 +26,10 @@ stock ShowKickReasonDialog(adminid, targetid) {
 // Muestra el diálogo para seleccionar razón de ban
 stock ShowBanReasonDialog(adminid, targetid) {
     gAdminTarget[adminid] = targetid;
-    gAdminAction[adminid] = 2; // 2 = ban
-
-    new targetName[MAX_PLAYER_NAME];
-    GetPlayerName(targetid, targetName, sizeof(targetName));
+    // acción implícita: ban (antes se almacenaba en gAdminAction, ahora no se usa)
 
     new header[64];
-    format(header, sizeof(header), "Banear a %s", targetName);
+    format(header, sizeof(header), "Banear a %s", GetPlayerNameEx(targetid));
 
     ShowPlayerDialog(adminid, AdminBanDialog, DIALOG_STYLE_LIST,
         header,
@@ -45,88 +39,83 @@ stock ShowBanReasonDialog(adminid, targetid) {
 
 hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {
 
-    // --- Diálogo de Kick ---
-    if(dialogid == AdminKickDialog) {
-        if(!response) {
-            SendClientMessage(playerid, COLOR_YELLOW, "[ADMIN] Acción de kick cancelada.");
+    switch(dialogid) {
+        case AdminKickDialog: {
+            if(!response) {
+                SendClientMessage(playerid, COLOR_YELLOW, "[ADMIN] Acción de kick cancelada.");
+                gAdminTarget[playerid] = INVALID_PLAYER_ID;
+                return 1;
+            }
+
+            new targetid = gAdminTarget[playerid];
+            if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid)) {
+                SendClientMessage(playerid, COLOR_RED, "[ADMIN] El jugador ya no está conectado.");
+                gAdminTarget[playerid] = INVALID_PLAYER_ID;
+                return 1;
+            }
+
+            new reasons[5][32] = {
+                "Conducta inapropiada",
+                "Trampas / Hacks",
+                "Robo de cuenta",
+                "Lenguaje ofensivo",
+                "Otra razón"
+            };
+
+            new reason[32];
+            if(listitem >= 0 && listitem < 5)
+                format(reason, sizeof(reason), "%s", reasons[listitem]);
+            else
+                format(reason, sizeof(reason), "Sin razón especificada");
+
+            new msg[160];
+            format(msg, sizeof(msg), "[ADMIN] %s ha sido kickeado por %s. Razón: %s", GetPlayerNameEx(targetid), GetPlayerNameEx(playerid), reason);
+            SendClientMessageToAll(COLOR_RED, msg);
+
+            Kick(targetid);
             gAdminTarget[playerid] = INVALID_PLAYER_ID;
             return 1;
         }
 
-        new targetid = gAdminTarget[playerid];
-        if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid)) {
-            SendClientMessage(playerid, COLOR_RED, "[ADMIN] El jugador ya no está conectado.");
+        case AdminBanDialog: {
+            if(!response) {
+                SendClientMessage(playerid, COLOR_YELLOW, "[ADMIN] Acción de ban cancelada.");
+                gAdminTarget[playerid] = INVALID_PLAYER_ID;
+                return 1;
+            }
+
+            new targetid = gAdminTarget[playerid];
+            if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid)) {
+                SendClientMessage(playerid, COLOR_RED, "[ADMIN] El jugador ya no está conectado.");
+                gAdminTarget[playerid] = INVALID_PLAYER_ID;
+                return 1;
+            }
+
+            new reasons[5][32] = {
+                "Conducta inapropiada",
+                "Trampas / Hacks",
+                "Robo de cuenta",
+                "Lenguaje ofensivo",
+                "Otra razón"
+            };
+
+            new reason[32];
+            if(listitem >= 0 && listitem < 5)
+                format(reason, sizeof(reason), "%s", reasons[listitem]);
+            else
+                format(reason, sizeof(reason), "Sin razón especificada");
+
+            new msg[160];
+            format(msg, sizeof(msg), "[ADMIN] %s ha sido baneado por %s. Razón: %s", GetPlayerNameEx(targetid), GetPlayerNameEx(playerid), reason);
+            SendClientMessageToAll(COLOR_RED, msg);
+
+            Ban(targetid);
             gAdminTarget[playerid] = INVALID_PLAYER_ID;
             return 1;
         }
 
-        new reasons[5][32] = {
-            "Conducta inapropiada",
-            "Trampas / Hacks",
-            "Robo de cuenta",
-            "Lenguaje ofensivo",
-            "Otra razón"
-        };
-
-        new reason[32];
-        if(listitem >= 0 && listitem < 5)
-            format(reason, sizeof(reason), "%s", reasons[listitem]);
-        else
-            format(reason, sizeof(reason), "Sin razón especificada");
-
-        new adminName[MAX_PLAYER_NAME], targetName[MAX_PLAYER_NAME];
-        GetPlayerName(playerid, adminName, sizeof(adminName));
-        GetPlayerName(targetid, targetName, sizeof(targetName));
-
-        new msg[160];
-        format(msg, sizeof(msg), "[ADMIN] %s ha sido kickeado por %s. Razón: %s", targetName, adminName, reason);
-        SendClientMessageToAll(COLOR_RED, msg);
-
-        Kick(targetid);
-        gAdminTarget[playerid] = INVALID_PLAYER_ID;
-        return 1;
-    }
-
-    // --- Diálogo de Ban ---
-    if(dialogid == AdminBanDialog) {
-        if(!response) {
-            SendClientMessage(playerid, COLOR_YELLOW, "[ADMIN] Acción de ban cancelada.");
-            gAdminTarget[playerid] = INVALID_PLAYER_ID;
-            return 1;
-        }
-
-        new targetid = gAdminTarget[playerid];
-        if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid)) {
-            SendClientMessage(playerid, COLOR_RED, "[ADMIN] El jugador ya no está conectado.");
-            gAdminTarget[playerid] = INVALID_PLAYER_ID;
-            return 1;
-        }
-
-        new reasons[5][32] = {
-            "Conducta inapropiada",
-            "Trampas / Hacks",
-            "Robo de cuenta",
-            "Lenguaje ofensivo",
-            "Otra razón"
-        };
-
-        new reason[32];
-        if(listitem >= 0 && listitem < 5)
-            format(reason, sizeof(reason), "%s", reasons[listitem]);
-        else
-            format(reason, sizeof(reason), "Sin razón especificada");
-
-        new adminName[MAX_PLAYER_NAME], targetName[MAX_PLAYER_NAME];
-        GetPlayerName(playerid, adminName, sizeof(adminName));
-        GetPlayerName(targetid, targetName, sizeof(targetName));
-
-        new msg[160];
-        format(msg, sizeof(msg), "[ADMIN] %s ha sido baneado por %s. Razón: %s", targetName, adminName, reason);
-        SendClientMessageToAll(COLOR_RED, msg);
-
-        Ban(targetid);
-        gAdminTarget[playerid] = INVALID_PLAYER_ID;
-        return 1;
+        default:
+            return 0; // No es un diálogo admin, dejamos que otros hooks lo manejen
     }
 
     return 0;
