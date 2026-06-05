@@ -296,13 +296,84 @@ CMD:inmortal(playerid, params[]) {
     if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid))
         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Jugador no encontrado.");
 
-    TogglePlayerInvincibility(targetid);
+    SetPlayerHealth(targetid, 1000);
+    SetPlayerArmour(targetid, 1000);
 
     new msg[128];
     format(msg, sizeof(msg), "[ADMIN] %s te ha toggled la inmortalidad.", GetPlayerNameEx(playerid));
     SendClientMessage(targetid, COLOR_YELLOW, msg);
 
     format(msg, sizeof(msg), "[ADMIN] Toggleste la inmortalidad de %s (ID:%d).", GetPlayerNameEx(targetid), targetid);
+    SendClientMessage(playerid, COLOR_GREEN, msg);
+    return 1;
+}
+
+CMD:darskin(playerid, params[]) {
+    if(!pInfo[playerid][pLogged])   return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
+    if(!IsAdmin(playerid))          return SendClientMessage(playerid, COLOR_RED, "[ERROR] No tienes permisos de administrador.");
+    if(!IsOnDuty(playerid))         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes estar en modo /adminduty para usar comandos admin.");
+
+    new targetid, skinid;
+    if(sscanf(params, "ud", targetid, skinid))
+        return SendClientMessage(playerid, COLOR_WHITE, "USO: /darskin [id] [skin_id]");
+
+    if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid))
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] Jugador no encontrado.");
+
+    SetPlayerSkin(targetid, skinid); // Asumiendo que el skin 0 es un skin especial de admin
+
+    new msg[128];
+    format(msg, sizeof(msg), "[ADMIN] %s te ha dado un skin.", GetPlayerNameEx(playerid));
+    SendClientMessage(targetid, COLOR_YELLOW, msg);
+
+    format(msg, sizeof(msg), "[ADMIN] Le diste un skin a %s (ID:%d).", GetPlayerNameEx(targetid), targetid);
+    SendClientMessage(playerid, COLOR_GREEN, msg);
+    return 1;
+}
+
+CMD:verip(playerid, params[]) {
+    if(!pInfo[playerid][pLogged])   return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
+    if(!IsAdmin(playerid))          return SendClientMessage(playerid, COLOR_RED, "[ERROR] No tienes permisos de administrador.");
+    if(!IsOnDuty(playerid))         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes estar en modo /adminduty para usar comandos admin.");
+
+    new targetid;
+    if(sscanf(params, "u", targetid))
+        return SendClientMessage(playerid, COLOR_WHITE, "USO: /verip [id]");
+
+    if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid))
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] Jugador no encontrado.");
+
+    if(pInfo[targetid][pAdmin] < ADMIN_HEAD)
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] No tiene permisos para ver la IP de este jugador.");
+
+    new ip[16];
+    GetPlayerIp(targetid, ip, sizeof(ip));
+
+    new msg[128];
+    format(msg, sizeof(msg), "[ADMIN] La IP de %s (ID:%d) es: %s", GetPlayerNameEx(targetid), targetid, ip);
+    SendClientMessage(playerid, COLOR_GREEN, msg);
+    return 1;
+}
+
+CMD:setclima(playerid, params[]) {
+    if(!pInfo[playerid][pLogged])   return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
+    if(!IsAdmin(playerid))          return SendClientMessage(playerid, COLOR_RED, "[ERROR] No tienes permisos de administrador.");
+    if(!IsOnDuty(playerid))         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes estar en modo /adminduty para usar comandos admin.");
+
+    new climaid;
+    if(sscanf(params, "d", climaid))
+        return SendClientMessage(playerid, COLOR_WHITE, "USO: /setclima [clima_id]");
+
+    if(climaid < 0 || climaid > 20) // Asumiendo que el rango de climas es 0-20
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] ID de clima inválido.");
+
+    if(pInfo[playerid][pAdmin] < ADMIN_HEAD)
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] No tienes permisos para cambiar el clima.");
+
+    SetWeather(climaid);
+
+    new msg[128];
+    format(msg, sizeof(msg), "[ADMIN] Cambiaste el clima a %d.", climaid);
     SendClientMessage(playerid, COLOR_GREEN, msg);
     return 1;
 }
