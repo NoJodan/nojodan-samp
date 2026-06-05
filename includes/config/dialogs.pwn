@@ -9,11 +9,15 @@
 #define _dialogs_included
 
 //Player Info
-#define 				RegisterDialog 				(1)
-#define 				LoginDialog 				(2)
-#define 				AgeDialog 					(3)
-#define 				SexDialog 					(4)
+#define 			RegisterDialog 				(1)
+#define 			LoginDialog 				(2)
+#define 			AgeDialog 					(3)
+#define 			SexDialog 					(4)
 
 //Rol
-#define 				RolDialog 					(5)
-#define 				RolNombreDialog 			(6)
+#define 			RolDialog 					(5)
+#define 			RolNombreDialog 			(6)
+
+//Admin
+#define 			AdminKickDialog 			(7)
+#define 			AdminBanDialog 				(8)

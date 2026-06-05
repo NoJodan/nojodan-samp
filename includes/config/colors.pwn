@@ -9,6 +9,12 @@
 #define _colors_included
 
 #define					COLOR_USUARIO				0xEFEFEFFF
+#define                 COLOR_TRIAL					0x00FF00FF
+#define                 COLOR_MOD					0x0000FFFF
+#define                 COLOR_ADMIN					0xFF0000FF
+#define                 COLOR_HEAD					0xFFFF00FF
+
+
 //Colores
 #define					COLOR_WHITE_T				"{FFFFFF}"
 #define					COLOR_RED_T					"{F81414}"
@@ -19,6 +25,8 @@
 #define					COLOR_RED 					0xE60000FF
 #define					COLOR_PURPLE				0xC2A2DAAA
 #define					COLOR_GREEN					0x9EC73DAA
+<<<<<<< HEAD
+#define                 COLOR_CYAN                  0x06B6C2AA
 #define					COLOR_FADE1					0xE6E6E6E6
 #define					COLOR_FADE2					0xC8C8C8C8
 #define					COLOR_FADE3					0xAAAAAAAA
