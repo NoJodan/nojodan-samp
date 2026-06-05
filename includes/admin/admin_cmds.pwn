@@ -237,3 +237,72 @@ CMD:mandarvw(playerid, params[]) {
     SendClientMessage(playerid, COLOR_GREEN, msg);
     return 1;
 }
+
+CMD:darvida(playerid, params[]) {
+    if(!pInfo[playerid][pLogged])   return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
+    if(!IsAdmin(playerid))          return SendClientMessage(playerid, COLOR_RED, "[ERROR] No tienes permisos de administrador.");
+    if(!IsOnDuty(playerid))         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes estar en modo /adminduty para usar comandos admin.");
+
+    new targetid;
+    if(sscanf(params, "u", targetid))
+        return SendClientMessage(playerid, COLOR_WHITE, "USO: /darvida [id]");
+
+    if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid))
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] Jugador no encontrado.");
+
+    GivePlayerHealth(targetid, 100);
+
+    new msg[128];
+    format(msg, sizeof(msg), "[ADMIN] %s te ha dado vida.", GetPlayerNameEx(playerid));
+    SendClientMessage(targetid, COLOR_YELLOW, msg);
+
+    format(msg, sizeof(msg), "[ADMIN] Le diste vida a %s (ID:%d).", GetPlayerNameEx(targetid), targetid);
+    SendClientMessage(playerid, COLOR_GREEN, msg);
+    return 1;
+}
+
+CMD:darchaleco(playerid, params[]) {
+    if(!pInfo[playerid][pLogged])   return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
+    if(!IsAdmin(playerid))          return SendClientMessage(playerid, COLOR_RED, "[ERROR] No tienes permisos de administrador.");
+    if(!IsOnDuty(playerid))         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes estar en modo /adminduty para usar comandos admin.");
+
+    new targetid;
+    if(sscanf(params, "u", targetid))
+        return SendClientMessage(playerid, COLOR_WHITE, "USO: /darchaleco [id]");
+
+    if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid))
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] Jugador no encontrado.");
+
+    GivePlayerArmour(targetid, 100);
+
+    new msg[128];
+    format(msg, sizeof(msg), "[ADMIN] %s te ha dado un chaleco.", GetPlayerNameEx(playerid));
+    SendClientMessage(targetid, COLOR_YELLOW, msg);
+
+    format(msg, sizeof(msg), "[ADMIN] Le diste un chaleco a %s (ID:%d).", GetPlayerNameEx(targetid), targetid);
+    SendClientMessage(playerid, COLOR_GREEN, msg);
+    return 1;
+}
+
+CMD:inmortal(playerid, params[]) {
+    if(!pInfo[playerid][pLogged])   return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes iniciar sesión primero.");
+    if(!IsAdmin(playerid))          return SendClientMessage(playerid, COLOR_RED, "[ERROR] No tienes permisos de administrador.");
+    if(!IsOnDuty(playerid))         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Debes estar en modo /adminduty para usar comandos admin.");
+
+    new targetid;
+    if(sscanf(params, "u", targetid))
+        return SendClientMessage(playerid, COLOR_WHITE, "USO: /inmortal [id]");
+
+    if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid))
+        return SendClientMessage(playerid, COLOR_RED, "[ERROR] Jugador no encontrado.");
+
+    TogglePlayerInvincibility(targetid);
+
+    new msg[128];
+    format(msg, sizeof(msg), "[ADMIN] %s te ha toggled la inmortalidad.", GetPlayerNameEx(playerid));
+    SendClientMessage(targetid, COLOR_YELLOW, msg);
+
+    format(msg, sizeof(msg), "[ADMIN] Toggleste la inmortalidad de %s (ID:%d).", GetPlayerNameEx(targetid), targetid);
+    SendClientMessage(playerid, COLOR_GREEN, msg);
+    return 1;
+}
