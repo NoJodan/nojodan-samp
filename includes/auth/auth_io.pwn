@@ -22,6 +22,8 @@ public LoadUser_Data(playerid, name[], value[]) {
     INI_Int("pSkin", pInfo[playerid][pSkin]);
     INI_Int("pSex", pInfo[playerid][pSex]);
     INI_Int("pAge",     pInfo[playerid][pAge]);
+    INI_Int("pHealth", pInfo[playerid][pHealth]);
+    INI_Int("pArmour", pInfo[playerid][pArmour]);
     INI_Int("pLevel",   pInfo[playerid][pLevel]);
     INI_Int("pFaction", pInfo[playerid][pFaction]);
     INI_Int("pRank",    pInfo[playerid][pRank]);
@@ -47,6 +49,8 @@ public SaveUser_Data(playerid) {
         pInfo[playerid][pSkin] = GetPlayerSkin(playerid);
         pInfo[playerid][pInterior] = GetPlayerInterior(playerid);
         pInfo[playerid][pVirtualWorld] = GetPlayerVirtualWorld(playerid);
+        GetPlayerHealth(playerid, pInfo[playerid][pHealth]);
+        GetPlayerArmour(playerid, pInfo[playerid][pArmour]);
         GetPlayerPos(playerid, pInfo[playerid][pPosX], pInfo[playerid][pPosY], pInfo[playerid][pPosZ]);
         GetPlayerFacingAngle(playerid, pInfo[playerid][pPosA]);
 
@@ -60,6 +64,8 @@ public SaveUser_Data(playerid) {
         INI_WriteInt(file, "pSkin", pInfo[playerid][pSkin]);
         INI_WriteInt(file, "pSex", pInfo[playerid][pSex]);
         INI_WriteInt(file, "pAge",     pInfo[playerid][pAge]);
+        INI_WriteInt(file, "pHealth", pInfo[playerid][pHealth]);
+        INI_WriteInt(file, "pArmour", pInfo[playerid][pArmour]);
         INI_WriteInt(file, "pLevel",   pInfo[playerid][pLevel]);
         INI_WriteInt(file, "pFaction", pInfo[playerid][pFaction]);
         INI_WriteInt(file, "pRank",    pInfo[playerid][pRank]);

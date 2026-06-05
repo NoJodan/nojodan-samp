@@ -19,6 +19,8 @@ enum playerData {
     pSkin,
     pSex,
     pAge,
+    pHealth,
+    pArmour,
     pLevel,
     pFaction,
     pRank,

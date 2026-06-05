@@ -99,6 +99,7 @@ CMD:dararma(playerid, params[]) {
 
     GivePlayerWeapon(targetid, WEAPON:weaponid, ammo);
 
+    new msg[128];
     format(msg, sizeof(msg), "[ADMIN] %s te ha dado el arma %d con %d municiones.", GetPlayerNameEx(playerid), weaponid, ammo);
     SendClientMessage(targetid, COLOR_YELLOW, msg);
 
@@ -250,7 +251,7 @@ CMD:darvida(playerid, params[]) {
     if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid))
         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Jugador no encontrado.");
 
-    GivePlayerHealth(targetid, 100);
+    SetPlayerHealth(targetid, 100);
 
     new msg[128];
     format(msg, sizeof(msg), "[ADMIN] %s te ha dado vida.", GetPlayerNameEx(playerid));
@@ -273,7 +274,7 @@ CMD:darchaleco(playerid, params[]) {
     if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid))
         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Jugador no encontrado.");
 
-    GivePlayerArmour(targetid, 100);
+    SetPlayerArmour(targetid, 100);
 
     new msg[128];
     format(msg, sizeof(msg), "[ADMIN] %s te ha dado un chaleco.", GetPlayerNameEx(playerid));
@@ -343,7 +344,7 @@ CMD:verip(playerid, params[]) {
     if(targetid == INVALID_PLAYER_ID || !IsPlayerConnected(targetid))
         return SendClientMessage(playerid, COLOR_RED, "[ERROR] Jugador no encontrado.");
 
-    if(pInfo[targetid][pAdmin] < ADMIN_HEAD)
+    if(pInfo[playerid][pAdmin] < ADMIN_HEAD)
         return SendClientMessage(playerid, COLOR_RED, "[ERROR] No tiene permisos para ver la IP de este jugador.");
 
     new ip[16];

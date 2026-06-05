@@ -12,7 +12,7 @@
 stock GetPlayerNameEx(playerid) {
     new name[MAX_PLAYER_NAME];
     GetPlayerName(playerid, name, sizeof(name));
-    strreplace(name, "_", " "); // Reemplaza espacios por guiones bajos para evitar problemas de formato
+    strreplace(name, "_", " "); // Reemplaza guiones bajos por espacios para evitar problemas de formato
     return name;
 }
 

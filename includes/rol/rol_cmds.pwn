@@ -15,7 +15,7 @@ CMD:me(playerid, params[]) {
 
     new msg[128];
     format(msg, sizeof(msg), "* %s %s.", GetPlayerNameEx(playerid), params);
-    ProxDetector(15.0f, playerid, msg, COLOR_PURPLE, COLOR_PURPLE, COLOR_PURPLE, COLOR_PURPLE);
+    ProxDetector(15.0, playerid, msg, COLOR_PURPLE, COLOR_PURPLE, COLOR_PURPLE, COLOR_PURPLE);
     return 1;
 }
 
@@ -28,7 +28,7 @@ CMD:do(playerid, params[]) {
     new msg[128];
     format(msg, sizeof(msg), "* %s (( %s ))", params, GetPlayerNameEx(playerid));
 
-    ProxDetector(20.0f, playerid, msg, COLOR_CYAN, COLOR_CYAN, COLOR_CYAN, COLOR_CYAN);
+    ProxDetector(20.0, playerid, msg, COLOR_CYAN, COLOR_CYAN, COLOR_CYAN, COLOR_CYAN);
     return 1;
 }
 
@@ -40,6 +40,6 @@ CMD:e(playerid, params[]) {
 
     new msg[128];
     format(msg, sizeof(msg), "[Entorno]: %s (( %s ))", params, GetPlayerNameEx(playerid));
-    ProxDetector(25.0f, playerid, msg, COLOR_GREEN, COLOR_GREEN, COLOR_GREEN, COLOR_GREEN);
+    ProxDetector(25.0, playerid, msg, COLOR_GREEN, COLOR_GREEN, COLOR_GREEN, COLOR_GREEN);
     return 1;
 }

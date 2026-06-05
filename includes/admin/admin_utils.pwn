@@ -1,4 +1,4 @@
-// admin_utils.pwm
+// admin_utils.pwn
 // - Funciones relacionadas con el modo administrador, como crear el archivo del jugador, registrar casos, etc.
 // - Estas funciones se utilizan en los comandos de administrador y en la lógica de autenticación.
 

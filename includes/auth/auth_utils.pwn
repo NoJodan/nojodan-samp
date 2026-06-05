@@ -23,6 +23,8 @@ stock CreatePlayerFile(playerid) {
     INI_WriteInt(file, "pSkin", pInfo[playerid][pSkin]);
     INI_WriteInt(file, "pSex", pInfo[playerid][pSex]);
     INI_WriteInt(file, "pAge", pInfo[playerid][pAge]);
+    INI_WriteInt(file, "pHealth", 100);
+    INI_WriteInt(file, "pArmour", 0);
     INI_WriteInt(file, "pLevel", 0);
     INI_WriteInt(file, "pFaction", 0);
     INI_WriteInt(file, "pRank", 0);
@@ -91,6 +93,8 @@ stock LoginCase(playerid, const inputtext[]) {
         SetPlayerInterior(playerid, pInfo[playerid][pInterior]);
         SetPlayerSkin(playerid, pInfo[playerid][pSkin]);
         GivePlayerMoney(playerid, pInfo[playerid][pMoney]);
+        SetPlayerHealth(playerid, pInfo[playerid][pHealth]);
+        SetPlayerArmour(playerid, pInfo[playerid][pArmour]);
         SetSpawnInfo(playerid, 0, pInfo[playerid][pSkin], pInfo[playerid][pPosX], pInfo[playerid][pPosY], pInfo[playerid][pPosZ], pInfo[playerid][pPosA], t_WEAPON:0, 0, t_WEAPON:0, 0, t_WEAPON:0, 0);
         SpawnPlayer(playerid);
         return 1;
