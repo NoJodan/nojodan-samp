@@ -49,3 +49,5 @@ samp.ban
 scriptfiles/Users/
 log.txt
 pawn.lock
+AGENTS.md
+.opencode/
