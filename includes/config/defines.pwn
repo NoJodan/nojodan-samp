@@ -14,6 +14,7 @@
 
 //Limites
 #define					MAX_PING					(1500)
+#define					MAX_FACTIONS				(20)
 
 //Generos
 #define                 SEX_MALE                     (0)
@@ -28,3 +29,8 @@
 
 // Niveles de rol (experiencia / nivel del personaje)
 #define ROL_NIVEL_MAX   (100)
+
+// Posición de spawn por defecto
+#define SPAWN_POS_X     (-2016.4399)
+#define SPAWN_POS_Y     (-79.77140)
+#define SPAWN_POS_Z     (35.3203)

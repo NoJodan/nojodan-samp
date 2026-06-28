@@ -122,6 +122,7 @@ CMD:limpiararmas(playerid, params[]) {
 
     ResetPlayerWeapons(targetid);
 
+    new msg[128];
     format(msg, sizeof(msg), "[ADMIN] %s ha limpiado tus armas.", GetPlayerNameEx(playerid));
     SendClientMessage(targetid, COLOR_YELLOW, msg);
 

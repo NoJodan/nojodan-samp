@@ -21,3 +21,6 @@
 //Admin
 #define 			AdminKickDialog 			(7)
 #define 			AdminBanDialog 				(8)
+
+//Varios
+#define 			KeyDialog 					(9)

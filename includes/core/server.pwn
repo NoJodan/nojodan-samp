@@ -16,7 +16,13 @@ hook OnGameModeInit() {
 	SetWeather(2);
 	SetWorldTime(11);
 	UsePlayerPedAnims();
+	LoadFaction_DataAll();
 
+	return 1;
+}
+
+hook OnGameModeExit() {
+	SaveFaction_DataAll();
 	return 1;
 }
 

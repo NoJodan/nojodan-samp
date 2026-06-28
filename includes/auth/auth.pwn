@@ -43,7 +43,7 @@ hook OnPlayerDisconnect(playerid, reason) {
     return 1;
 }
 
-public OnPlayerSpawn(playerid)
+hook OnPlayerSpawn(playerid)
 {
 	SendClientMessage(playerid, COLOR_GREEN, "Iniciaste sesion.");
     return 1;

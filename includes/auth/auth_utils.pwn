@@ -32,13 +32,13 @@ stock CreatePlayerFile(playerid) {
     INI_WriteInt(file, "pWarns", 0);
     INI_WriteInt(file, "pVirtualWorld", 0);
     INI_WriteInt(file, "pInterior", 0);
-    INI_WriteFloat(file, "pPosX", -2016.4399);
-    INI_WriteFloat(file, "pPosY", -79.77140);
-    INI_WriteFloat(file, "pPosZ", 35.3203);
+    INI_WriteFloat(file, "pPosX", SPAWN_POS_X);
+    INI_WriteFloat(file, "pPosY", SPAWN_POS_Y);
+    INI_WriteFloat(file, "pPosZ", SPAWN_POS_Z);
     INI_WriteFloat(file, "pPosA", 0);
     INI_Close(file);
 
-    SetSpawnInfo(playerid, 0, pInfo[playerid][pSkin], -2016.4399, -79.77140, 35.3203, 0, t_WEAPON:0, 0, t_WEAPON:0, 0, t_WEAPON:0, 0);
+    SetSpawnInfo(playerid, 0, pInfo[playerid][pSkin], SPAWN_POS_X, SPAWN_POS_Y, SPAWN_POS_Z, 0, t_WEAPON:0, 0, t_WEAPON:0, 0, t_WEAPON:0, 0);
     SetPlayerVirtualWorld(playerid, 0);
     SetPlayerInterior(playerid, 0);
     SetPlayerSkin(playerid, pInfo[playerid][pSkin]);

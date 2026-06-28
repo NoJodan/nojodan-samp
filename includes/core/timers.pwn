@@ -7,3 +7,8 @@
     #endinput
 #endif
 #define _timers_included
+
+forward KickInTime(playerid);
+public KickInTime(playerid) {
+    Kick(playerid);
+}

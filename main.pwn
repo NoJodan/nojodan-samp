@@ -9,6 +9,10 @@
 #include "includes/config/dialogs.pwn"
 #include "includes/config/colors.pwn"
 #include "includes/core/server.pwn"
+#include "includes/core/callbacks.pwn"
+#include "includes/core/globals.pwn"
+#include "includes/core/utils.pwn"
+#include "includes/core/timers.pwn"
 
 #include "includes/auth/auth_data.pwn"
 #include "includes/auth/auth_io.pwn"
@@ -28,7 +32,21 @@
 #include "includes/rol/rol.pwn"
 #include "includes/rol/rol_cmds.pwn"
 
-#include "includes/core/callbacks.pwn"
+#include "includes/faction/faction_data.pwn"
+#include "includes/faction/faction_io.pwn"
+#include "includes/faction/faction_utils.pwn"
+#include "includes/faction/faction_cmds.pwn"
+
+#include "includes/economy/economy.pwn"
+#include "includes/economy/economy_cmds.pwn"
+
+#include "includes/inventory/inventory_data.pwn"
+#include "includes/inventory/inventory_items.pwn"
+#include "includes/inventory/inventory.pwn"
+
+#include "includes/vehicles/vehicles_data.pwn"
+#include "includes/vehicles/vehicles_spawn.pwn"
+#include "includes/vehicles/vehicles.pwn"
 
 main()
 {
